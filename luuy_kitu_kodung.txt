@@ -1,0 +1,119 @@
+The following Windows forbidden name:
+        < (less than)
+        > (greater than)
+        : (colon)
+        " (double quote)
+        / (forward slash)
+        \ (backslash)
+        | (vertical bar or pipe)
+        ? (question mark)
+        * (asterisk)
+        
+yeucaulaptrinh ('copy ' ).txt
+
+get_dir_hash(){
+	local dir_ori="$1"
+	local pathname
+	
+	for pathname in "$dir_ori"/* ; do
+		if [ -d "$pathname" ] ; then 
+			glb_afDirHash=$(stat "$pathname" -c '%Y')"$glb_afDirHash"
+			glb_afDirHash=$(ls -all "$pathname" | wc -l)"$glb_afDirHash"
+			glb_hashcount=$(($glb_hashcount+1))
+			glb_hashcountmodulo=$(($glb_hashcount%10000))
+			if [ "$glb_hashcountmodulo" -eq 0 ]; then
+				glb_afDirHash=$(echo "$glb_afDirHash" | md5sum | awk '{ print $1 }')
+			fi
+			#echo "-----""$pathname"
+			get_dir_hash "$pathname"
+		fi
+	done
+}
+
+---truoc:---
+get_dir_hash(){
+	local dir_ori="$1"
+	local relative_path="$2"
+	local pathname
+	local dname
+			
+	for pathname in "$dir_ori"/* ; do
+		if [ -d "$pathname" ] ; then 
+			dname=$(basename "$pathname")
+			#echo "$pathname"
+			#echo "$relative_path""/""$dname"
+			echo "$relative_path""/""$dname" >> "$hashlogfile"
+			glb_afDirHash=$(stat "$pathname" -c '%Y')"$glb_afDirHash"
+			glb_afDirHash=$(ls -all "$pathname" | wc -l)"$glb_afDirHash"
+			#glb_hashcount=$(($glb_hashcount+1))
+			#glb_hashcountmodulo=$(($glb_hashcount%10000))
+			#if [ "$glb_hashcountmodulo" -eq 0 ]; then
+				glb_afDirHash=$(echo "$glb_afDirHash" | md5sum | awk '{ print $1 }')
+				echo "$glb_afDirHash" >> "$hashlogfile"
+			#fi
+			#echo "-----""$pathname"
+			get_dir_hash "$pathname" "$relative_path""/""$dname"
+		fi
+	done
+}
+
+
+
+---sau:----
+glb_befDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+glb_befDirHash=$(echo "$glb_befDirHash" | md5sum )
+echo "/" >> "$hashlogfile"
+echo "$glb_befDirHash" >> "$hashlogfile"
+get_dir_hash "$glb_mainmem_local" ""
+
+
+
+---
+if [ "$rs" ] ; then				
+				# "$glb_endclienttox_pid is running"
+				if [ $code -eq 0 ] ; then
+					while true; do
+						glb_afDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+						get_dir_hash "$glb_mainmem_local"
+						glb_afDirHash=$(echo "$glb_afDirHash" | md5sum )
+						if [ "$glb_befDirHash" == "$glb_afDirHash" ] ; then
+							echo 'sleep 2 phut'"----afterhash:""$glb_afDirHash"
+							echo '###ok###' >> "$mainlogfile"
+							sleep 120
+						else
+							break
+						fi
+					done
+				else 
+					#nghi 1 phut 
+					echo '###error1###' >> "$mainlogfile"
+					echo 'sleep 2 phut'
+					sleep 120
+				fi
+
+				continue
+			else
+				echo '###error2###' >> "$mainlogfile"
+				echo "$glb_endclienttox_pid is not running, sleep 2 phut"
+				#nghi 2 phut 
+				sleep 120
+				break
+			fi
+			
+			
+			
+			----
+			
+			while true; do
+			glb_befDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+			echo "/" >> "$hashlogfile"
+			echo "$glb_befDirHash" >> "$hashlogfile"
+			sync_dir ""
+			code=$?		
+			# "code after sync_dir:""$code"
+			rs=$(ps -p $glb_endclienttox_pid | sed -n 2p)
+			glb_befDirHash=$(echo "$glb_befDirHash" | md5sum )
+			# "rs:""$rs""----beforehash:""$glb_befDirHash"
+			
+		done
+		

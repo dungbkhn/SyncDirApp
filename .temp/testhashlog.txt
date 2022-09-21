@@ -1,0 +1,1226 @@
+/
+1663750496
+/AI
+1663579109
+/AI/BackProgation_GradientDescent_Codes
+1663579109
+/AI/BackProgation_GradientDescent_Codes/Codes
+1663579121
+/Anh Image
+1663657054
+/Anh Image/zalo
+1663580573
+/Articles
+1663580574
+/Articles/Hash-based Sign
+1663580607
+/Assets_bird
+1663580625
+/Assets_bird/Scenes
+1663580627
+/Blockchain
+1663580643
+/Blockchain/Btc Quantum
+1663580654
+/ClientServerBackup
+1625577474
+/ClientServerBackup/ClientUbuntu_Backup
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive/FolderWatcher
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive/Logs
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive/tmp
+1602106568
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive/www
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive/www/a
+1604222764
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_22_9
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_22_9/Logs
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_22_9/tmp
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_22_9/www
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive
+1616690739
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive/Logs
+1616690739
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive/tmp
+1599489523
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive/www
+1616690739
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive/www/a
+1600119912
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive/www/b
+1600119916
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive_Client2
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive_Client2/Logs
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive_Client2/tmp
+1599489523
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive_Client2/www
+1616690740
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive_Client2/www/a
+1600119912
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_AllClients/MainDrive_Client2/www/b
+1600119916
+/ClientServerBackup/ClientUbuntu_Backup/MainDrive_old
+1616690739
+/ClientServerBackup/ClientUbuntu_Backup2
+1600810400
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive
+1600809122
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive/Logs
+1599350402
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive/tmp
+1600809553
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive/www
+1600808743
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients
+1600119995
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive
+1600119868
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive/Logs
+1599350402
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive/tmp
+1599489523
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive/www
+1600119916
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive/www/a
+1600119912
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive/www/b
+1600119916
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive_Client2
+1600119875
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive_Client2/Logs
+1599350402
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive_Client2/tmp
+1599489523
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive_Client2/www
+1600119916
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive_Client2/www/a
+1600119912
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_AllClients/MainDrive_Client2/www/b
+1600119916
+/ClientServerBackup/ClientUbuntu_Backup2/MainDrive_old
+1598980231
+/ClientServerBackup/MainDrive_Client1
+1600712810
+/ClientServerBackup/MainDrive_Client1/Logs
+1600712806
+/ClientServerBackup/MainDrive_Client1/tmp
+1600712810
+/ClientServerBackup/MainDrive_Client1/www
+1600712811
+/ClientServerBackup/ServerBackup
+1616690740
+/ClientServerBackup/ServerBackup/C_Ipc
+1616690740
+/ClientServerBackup/ServerBackup/C_Ipc/Logs
+1616690740
+/ClientServerBackup/ServerBackup/C_Ipc_29_9
+1616690740
+/ClientServerBackup/ServerBackup/C_Ipc_29_9/Logs
+1616690740
+/ClientServerBackup/ServerBackup/C_Ipc_7_10
+1616690740
+/ClientServerBackup/ServerBackup/C_Ipc_7_10/Logs
+1616690740
+/ClientServerBackup/ServerBackup/Https
+1616690740
+/ClientServerBackup/ServerBackup/LongLongInt
+1616690740
+/ClientServerBackup/ServerBackup/mainmem
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/DisplayDirectoryContents
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/DisplayDirectoryContents/.images
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/DisplayDirectoryContents/.images/gif
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/images
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/output
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/www
+1616690740
+/ClientServerBackup/ServerBackup/MyDisk/www_trash
+1600810375
+/ClientServerBackup/ServerBackup/MyPeer
+1616690740
+/ClientServerBackup/ServerBackup/Nodejs_Ipc
+1616690740
+/ClientServerBackup/ServerBackup/simpleChatApp
+1616690740
+/ClientServerBackup/ServerBackup/Socketv4
+1616690740
+/ClientServerBackup/ServerBackup/Socketv6
+1616690740
+/ClientServerBackup/ServerBackup/Socketv6/TestSocket
+1616690740
+/ClientServerBackup/ServerBackup/ThreadPool
+1616690740
+/CongViecBKHN
+1663580655
+/CongViecBKHN/Tham Dinh
+1663580656
+/Cplusplus
+1639884269
+/Cplusplus/AES
+1616690428
+/Cplusplus/AES/tiny-AES-c-master
+1616690428
+/Cplusplus/AES/tiny-AES-c-master/mytest
+1616690428
+/Cplusplus/AES/tiny-AES-c-master/test_package
+1616690428
+/Cplusplus/BinFile
+1616690428
+/Cplusplus/CallJavaMethods
+1616690428
+/Cplusplus/CastNum
+1616690428
+/Cplusplus/CheckLimitSize
+1626041289
+/Cplusplus/ConstArray
+1616690428
+/Cplusplus/CopyNumToString
+1616690428
+/Cplusplus/CRC32
+1616690428
+/Cplusplus/Exec_Linux_Cmd
+1616690428
+/Cplusplus/GTK
+1616690428
+/Cplusplus/Indicator
+1616689870
+/Cplusplus/Indicator/OtherTest
+1616689870
+/Cplusplus/Indicator/OtherTest/test-libappindicator-master
+1639892364
+/Cplusplus/Inotify
+1641633772
+/Cplusplus/Inotify/abcd
+1616690428
+/Cplusplus/Inotify/abcd/gfjfghgfh
+1601284209
+/Cplusplus/Inotify/abcd/hello
+1616690428
+/Cplusplus/Inotify/abcd/hello/inhello2
+1601284209
+/Cplusplus/Inotify/abcd/inhello
+1601284209
+/Cplusplus/IPC_Pipe
+1616690428
+/Cplusplus/IPC_Sockets
+1616690428
+/Cplusplus/JsonProcess
+1616793695
+/Cplusplus/LimitTypes
+1616690428
+/Cplusplus/ListDir
+1641641525
+/Cplusplus/Logger
+1616690428
+/Cplusplus/MainDrive
+1616690428
+/Cplusplus/MainDrive/FolderWatcher
+1616690428
+/Cplusplus/MainDrive/Logs
+1616690428
+/Cplusplus/MainDrive/tmp
+1602106568
+/Cplusplus/MainDrive/www
+1616690428
+/Cplusplus/MainDrive/www/a
+1604222764
+/Cplusplus/MakeFileTutorial
+1619959160
+/Cplusplus/MakeFileTutorial/include
+1619955788
+/Cplusplus/MakeFileTutorial/lib
+1619955954
+/Cplusplus/MakeFileTutorial/obj
+1619956013
+/Cplusplus/md5hash
+1627307704
+/Cplusplus/Nautilus
+1616690428
+/Cplusplus/Nautilus/simple-nautilus-extension-master
+1616690428
+/Cplusplus/NIOServer
+1621758583
+/Cplusplus/NIOServer/native_code
+1621717411
+/Cplusplus/OpenSSL
+1616690434
+/Cplusplus/OpenSSL/openssl-1.1.1g
+1616690434
+/Cplusplus/OpenSSL/openssl-1.1.1g/apps
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/apps/demoSRP
+1616690428
+/Cplusplus/OpenSSL/openssl-1.1.1g/Configurations
+1616690428
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/aes
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/aes/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/aria
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/asn1
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/async
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/async/arch
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/bf
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/bf/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/bio
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/blake2
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/bn
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/bn/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/buffer
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/camellia
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/camellia/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/cast
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/cast/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/chacha
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/chacha/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/cmac
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/cms
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/comp
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/conf
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ct
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/des
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/des/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/dh
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/dsa
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/dso
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ec
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ec/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ec/curve448
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ec/curve448/arch_32
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/engine
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/err
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/evp
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/hmac
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/idea
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/kdf
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/lhash
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/md2
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/md4
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/md5
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/md5/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/mdc2
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/modes
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/modes/asm
+1616690429
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/objects
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ocsp
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/pem
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/perlasm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/pkcs12
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/pkcs7
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/poly1305
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/poly1305/asm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rand
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rc2
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rc4
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rc4/asm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rc5
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rc5/asm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ripemd
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ripemd/asm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/rsa
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/seed
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/sha
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/sha/asm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/siphash
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/sm2
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/sm3
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/sm4
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/srp
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/stack
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/store
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ts
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/txt_db
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/ui
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/whrlpool
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/whrlpool/asm
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/x509
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/crypto/x509v3
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/bio
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/certs
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/certs/apps
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/cms
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/engines
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/evp
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/pkcs12
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/demos/smime
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/doc
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/doc/HOWTO
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/doc/man1
+1616690430
+/Cplusplus/OpenSSL/openssl-1.1.1g/doc/man3
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/doc/man5
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/doc/man7
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/engines
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/engines/asm
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/Text-Template-1.46
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/Text-Template-1.46/lib
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/Text-Template-1.46/lib/Text
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/Text-Template-1.46/lib/Text/Template
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/Text-Template-1.46/t
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/transfer
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/external/perl/transfer/Text
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/fuzz
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/include
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/include/crypto
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/include/internal
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/include/openssl
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/ms
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/os-dep
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/ssl
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/ssl/record
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/ssl/statem
+1616690431
+/Cplusplus/OpenSSL/openssl-1.1.1g/test
+1616690433
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/certs
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/ct
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/d2i-tests
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/ocsp-tests
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/ossl_shim
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/ossl_shim/include
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/ossl_shim/include/openssl
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/04-test_pem_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/10-test_bn_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/15-test_ecparam_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/15-test_ecparam_data/invalid
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/15-test_ecparam_data/valid
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/15-test_mp_rsa_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/30-test_evp_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/80-test_cms_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/80-test_ocsp_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/90-test_gost_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/90-test_includes_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/90-test_includes_data/conf-includes
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/90-test_sslapi_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/90-test_store_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/95-test_external_krb5_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/recipes/95-test_external_pyca_data
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/smime-certs
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/ssl-tests
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/test/testutil
+1616690432
+/Cplusplus/OpenSSL/openssl-1.1.1g/tools
+1616690433
+/Cplusplus/OpenSSL/openssl-1.1.1g/util
+1616690434
+/Cplusplus/OpenSSL/openssl-1.1.1g/util/perl
+1616690434
+/Cplusplus/OpenSSL/openssl-1.1.1g/util/perl/OpenSSL
+1616690433
+/Cplusplus/OpenSSL/openssl-1.1.1g/util/perl/OpenSSL/Test
+1616690433
+/Cplusplus/OpenSSL/openssl-1.1.1g/util/perl/OpenSSL/Util
+1616690433
+/Cplusplus/OpenSSL/openssl-1.1.1g/util/perl/TLSProxy
+1616690434
+/Cplusplus/OpenSSL/openssl-1.1.1g/VMS
+1616690428
+/Cplusplus/OpenSSL/Test_AES
+1616690428
+/Cplusplus/ServerTools
+1616690434
+/Cplusplus/sha256
+1626606195
+/Cplusplus/Socketv6
+1616690445
+/Cplusplus/Socketv6/FileTransfer
+1616690445
+/Cplusplus/Socketv6/FileTransfer/tuan4
+1616690445
+/Cplusplus/Socketv6/FileTransfer/tuan4/ubutuM
+1616690445
+/Cplusplus/Socketv6/IBMCode_IPv4
+1616690445
+/Cplusplus/Socketv6/NonBlocking
+1616690445
+/Cplusplus/Socketv6/Protocols
+1616690445
+/Cplusplus/Socketv6/SendFile
+1616690445
+/Cplusplus/Socketv6/SendRecvByReq
+1616690445
+/Cplusplus/Socketv6/TestSocket
+1616690445
+/Cplusplus/Socketv6/Transfer_File_IPv4
+1616690445
+/Cplusplus/Socketv6/TwoPortInAThread
+1616690445
+/Cplusplus/Socketv6/TwoSkTwoTHread
+1616690445
+/Cplusplus/Socketv6/WithSSL
+1616690445
+/Cplusplus/teststring
+1616690445
+/Cplusplus/ThreadPool
+1616690445
+/Cplusplus/ThreadPoolCpp
+1616690445
+/Cplusplus/TrayIcon
+1639892473
+/Cplusplus/TrayIcon/btry-master
+1538634490
+/Cplusplus/TrayIcon/kbi-master
+1639886334
+/Cplusplus/TrayIcon/spotify-tray-master
+1639886039
+/Cplusplus/TrayIcon/spotify-tray-master/autom4te.cache
+1639886018
+/Cplusplus/TrayIcon/spotify-tray-master/src
+1639886050
+/Cplusplus/TrayIcon/spotify-tray-master/src/.deps
+1639886050
+/Cplusplus/TrayIcon/Tray-Icon-GTK3-master
+1639885249
+/Cplusplus/TrayIcon/tray-icon-tool-master
+1525906790
+/Cplusplus/TrayIcon/tray-icon-tool-master/src
+1525906790
+/Cplusplus/TrayIcon/tray-master
+1639914878
+/Cplusplus/WrongPassStaticVar
+1616690445
+/CryptoCoin
+1601636513
+/CV
+1663580658
+/DATN
+1663580659
+/DATN/MinhLH32021
+1663580667
+/Drivers
+1616744816
+/Drivers/driver_cp210x
+1601229718
+/Drivers/driver_cp210x/.tmp_versions
+1601229718
+/Giangday
+1663583248
+/Giangday/CTDLGT
+1663581056
+/Giangday/CTDLGT/CTDLGT-pdf
+1663580696
+/Giangday/CTDLGT/CTDLGT-pdf/enc
+1663580720
+/Giangday/CTDLGT/De
+1663580803
+/Giangday/CTDLGT/De/2020
+1663580726
+/Giangday/CTDLGT/De/2021
+1663580730
+/Giangday/CTDLGT/De/2022_tn
+1663580790
+/Giangday/CTDLGT/De/2022_tn/de1-10
+1663580762
+/Giangday/CTDLGT/De/2022_tn/de11-20
+1663580775
+/Giangday/CTDLGT/De/2022_tn/de21-30
+1663580789
+/Giangday/CTDLGT/De/2022_tn/de31-40
+1663580802
+/Giangday/CTDLGT/De/De tai chuc
+1663580805
+/Giangday/CTDLGT/DungPQ
+1663580842
+/Giangday/CTDLGT/Luyen thi cao hoc
+1663580898
+/Giangday/CTDLGT/Luyen thi cao hoc/dethi
+1663580861
+/Giangday/CTDLGT/Luyen thi cao hoc/OnTapCaoHoc
+1663580868
+/Giangday/CTDLGT/Luyen thi cao hoc/OnTapCaoHoc/OnTapCaoHoc
+1663580892
+/Giangday/CTDLGT/Luyen thi cao hoc/OnTapCaoHoc/OnTapCaoHoc/sample
+1663580897
+/Giangday/CTDLGT/Luyen thi cao hoc/slide_noprint
+1663580925
+/Giangday/CTDLGT/OpenOffice
+1663580946
+/Giangday/CTDLGT/SourceCode
+1663581006
+/Giangday/CTDLGT/SourceCode/codecpp
+1663580993
+/Giangday/CTDLGT/SourceCode/Dropbox
+1663580994
+/Giangday/CTDLGT/SourceCode/Dropbox/Source Code
+1663581006
+/Giangday/CTDLGT/SourceCode/TDC
+1663581055
+/Giangday/CTDLGT/thayNghia
+1663581093
+/Giangday/Database security
+1663581242
+/Giangday/Database security/Database Security
+1663581230
+/Giangday/Database security/Database Security/An toàn CSDL - Báo cáo BTL
+1663581182
+/Giangday/Database security/Database Security/An toàn CSDL - Báo cáo BTL/An toàn CSDL - Báo cáo
+1663581230
+/Giangday/Database security/Database Security/BTL _ 1_2018
+1663581241
+/Giangday/Database security/Slide truong khac
+1663581257
+/Giangday/Kienthucmaytinh
+1663581308
+/Giangday/Kienthucmaytinh/Dethi2021
+1663581305
+/Giangday/Kienthucmaytinh/Dethi2021/Đề thi Kiến thức Máy tính 20211
+1663581307
+/Giangday/Kienthucmaytinh/video
+1663581357
+/Giangday/Ky_thuat_lap_trinh
+1663581706
+/Giangday/Ky_thuat_lap_trinh/BTL
+1663581385
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18
+1663581385
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL
+1663581548
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_BuiDuyAnh_PhamDucViet
+1663581388
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_BùiMinhHoàn_ ĐỗĐạiDương
+1663581390
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Đỗ Thái Sơn_Trần Đức Hùng
+1663581393
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Ngô Đức Trung_Đào Quang Duy_Nguyễn Tấn Nam Anh
+1663581395
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NgôThanhHưng+
+1663581398
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Ngô Văn Nam_Bùi Tùng Anh++
+1663581404
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Công Nguyên_Nguyễn Tiến Khoa
+1663581405
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NguyễnĐìnhTiến_NguyễnThanhBình_TrầnHoàngLinh+
+1663581411
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NguyễnHả Anh_NguyễnNamKhánh
+1663581413
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Hải Long_Nguyễn Thành Long_Phạm Vũ Việt Anh
+1663581415
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NguyenHongAnh_TranQuocToan_NguyenTieuAnh+
+1663581418
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Mạnh Tiến Anh_Trần Trung Hậu_Đào Vĩnh Linh
+1663581420
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NGUYEN_QUANG_HUY
+1663581423
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NguyễnThanhDương
+1663581425
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Thành Dương_ Vũ Duy Tuấn++
+1663581428
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NguyenThanhHoa+
+1663581433
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Anh_Nguyễn Đăng Dương+
+1663581435
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Long_Đặng Trung Anh_Đào Trọng Khang_Vũ Tự Học+
+1663581437
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+
+1663581438
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long
+1663581440
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/file_da_duoc_bien_dich_tren_ubuntu
+1663581440
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv
+1663581475
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/Debug
+1663581463
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/Debug/ktlt_qltv.tlog
+1663581464
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/.vs
+1663581465
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/.vs/ktlt_qltv
+1663581466
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/.vs/ktlt_qltv/v16
+1663581474
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/.vs/ktlt_qltv/v16/ipch
+1663581474
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/.vs/ktlt_qltv/v16/ipch/AutoPCH
+1663581475
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/.vs/ktlt_qltv/v16/ipch/AutoPCH/e93a0b97f30d8b12
+1663581475
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/x64
+1663581476
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/x64/Debug
+1663581490
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long+/BTL_Nguyễn Tiến Phong _ Lê Hoàng Long/ktlt_qltv/x64/Debug/ktlt_qltv.tlog
+1663581494
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NGUYỄN TUẤN ANH
+1663581496
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_NguyễnTuấnAnh_Phạm Đức Long
+1663581502
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Nguyễn Xuân Quốc Thái_Nguyễn Trần Anh Quân_Lê Chiến Thắng
+1663581505
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_PhạmMinhLong
+1663581507
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Phan Trường Huy_Mai Gia Long+
+1663581510
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Tô Mạnh Tùng_Nguyễn Mạnh Long_Lê Quang Vinh
+1663581512
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL - Trần Anh Dũng - 20187228
+1663581517
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL - Trần Anh Dũng - 20187228/Báo cáo KTLT - Trần Anh Dũng - 20187228
+1663581516
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL - Trần Anh Dũng - 20187228/__MACOSX
+1663581518
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL - Trần Anh Dũng - 20187228/__MACOSX/Báo cáo KTLT - Trần Anh Dũng - 20187228
+1663581519
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_TranLeHoang_PhamKhanhNam_NguyenHaDuc
+1663581539
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_TrầnPhiLong_NguyễnLịchDu
+1663581541
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Trần Phương Nam
+1663581544
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_TrầnThịThủy_ NguyễnĐứcChiến
+1663581546
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_TrươngBáHiếu_TrầnTấtHoàng_NguyễnHoàngTùng
+1663581548
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Trương Hùng Quân_ Đặng Nam Anh
+1663581551
+/Giangday/Ky_thuat_lap_trinh/BTL/OneDrive_2020-07-18/Upload BTL/BTL_Trương Hùng Quân_ Đặng Nam Anh/KTLT
+1663581554
+/Giangday/Ky_thuat_lap_trinh/Code
+1663581566
+/Giangday/Ky_thuat_lap_trinh/De
+1663581567
+/Giangday/Ky_thuat_lap_trinh/Programming Techniques
+1663581589
+/Giangday/Ky_thuat_lap_trinh/Tailieu
+1663581698
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Baithuchanh3
+1663581616
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 1. Tổng quan về kỹ thuật lập trình
+1663581634
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 2. Quản lý bộ nhớFile
+1663581638
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 3. HàmFile
+1663581642
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 4. Kỹ thuật viết mã nguồn hiệu quả
+1663581646
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 5. Phong cách lập trìnhFile
+1663581650
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 6. Kỹ thuật đệ quyFile
+1663581655
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 7. Cấu trúc dữ liệuFile
+1663581686
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 8. Lập trình phòng ngừaFile
+1663581698
+/Giangday/Ky_thuat_lap_trinh/Tailieu/Chương 9. Gỡ rối, kiểm thử và tinh chỉnh mã nguồn
+1663581706
+/Giangday/Ky_thuat_lap_trinh/Thuc_hanh_ky_thuat_lap_trinh
+1663581713
+/Giangday/Lap_trinh_C_nang_cao
+1663581748
+/Giangday/Lap_trinh_C_nang_cao/De thi
+1663581725
+/Giangday/Lap_trinh_C_nang_cao/Diem
+1663581725
+/Giangday/Lap_trinh_C_nang_cao/Slides
+1663581747
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao
+1663581808
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/baitap_metro
+1663581762
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/BFS
+1663581769
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/directed_graph
+1663581775
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/generic
+1663581777
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/graph
+1663581782
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/jval
+1663581787
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/libfdr
+1663581788
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/libfdr/libfdr
+1663581798
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/phonebook
+1663581800
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/Test_libfdr
+1663581807
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/Test_libfdr/data
+1663581805
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/Test_libfdr/include
+1663581807
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/Test_libfdr/lib
+1663581808
+/Giangday/Lap_trinh_C_nang_cao/test_C_nangcao/weighted_graph
+1663581812
+/Giangday/lop_thuc_hanh_TTUD
+1663581820
+/Giangday/Ly_thuyet_nhap_mon_cntt
+1663581838
+/Giangday/Multimedia
+1663582774
+/Giangday/Multimedia/danh dau anh
+1663581955
+/Giangday/Multimedia/daphuongtien_en
+1663582042
+/Giangday/Multimedia/da phuong tien _ old
+1663582179
+/Giangday/Multimedia/da phuong tien _ old/scilab xu ly sound
+1663582297
+/Giangday/Multimedia/da phuong tien _ old/scilab xu ly sound/Digital signal processing in Scilab and Xcos. Part 1_ Reading sound files _ Vladnama_files
+1663582256
+/Giangday/Multimedia/da phuong tien _ old/scilab xu ly sound/Digital signal processing in Scilab and Xcos. Part 2_ Playing sound files _ Vladnama_files
+1663582297
+/Giangday/Multimedia/da phuong tien _ old/scilab xu ly sound/Digital signal processing in Scilab and Xcos. Part 3_ Fourier Analysis _ Vladnama_files
+1663582346
+/Giangday/Multimedia/do an tot nghiep Chau
+1663582371
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn
+1663582620
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh
+1663582609
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/File chay
+1663582385
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo
+1663582597
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/Debug
+1663582444
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasper
+1663582457
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasper/Debug
+1663582457
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib
+1663582547
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/base
+1663582471
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/Debug
+1663582504
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/include
+1663582506
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/include/jasper
+1663582519
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/include/jasper/Debug
+1663582519
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/jp2
+1663582522
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/jpc
+1663582547
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/jpc/Debug
+1663582546
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/jpc/Release
+1663582547
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/jasperlib/Release
+1663582596
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/Release
+1663582597
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/J2kDemo/res
+1663582608
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/Chuong_trinh/test image
+1663582620
+/Giangday/Multimedia/do an tot nghiep Chau/CD-nopcoLAn/phieu_thong_tin_do_an
+1663582622
+/Giangday/Multimedia/ppt
+1663582699
+/Giangday/Multimedia/slide_china
+1663582735
+/Giangday/Multimedia/slide_jp
+1663582774
+/Giangday/Multimedia/video
+1663582790
+/Giangday/nhap_mon_cntt
+1663582819
+/Giangday/Sides_Java1_2013
+1663582923
+/Giangday/Sides_Java1_2013/code
+1663582888
+/Giangday/Sides_Java1_2013/code/lesson1
+1663582856
+/Giangday/Sides_Java1_2013/code/lesson2
+1663582859
+/Giangday/Sides_Java1_2013/code/lesson3
+1663582863
+/Giangday/Sides_Java1_2013/code/lesson4
+1663582866
+/Giangday/Sides_Java1_2013/code/lesson5
+1663582871
+/Giangday/Sides_Java1_2013/code/lesson6
+1663582877
+/Giangday/Sides_Java1_2013/code/lesson7
+1663582888
+/Giangday/Sides_Java1_2013/code/lesson8
+1663582893
+/Giangday/Sides_Java1_2013/Dethi
+1663582897
+/Giangday/Sides_Java1_2013/Diem
+1663582898
+/Giangday/Sides_Java1_2013/Lap trinh nang cao Java
+1663582922
+/Giangday/Sides_Java1_2013/Lap trinh nang cao Java/Code
+1663582922
+/Giangday/Sides_Java1_2013/Slides
+1663582956
+/Giangday/Sides_Java1_2013/Slides/gc_baitap
+1663582956
+/Giangday/Sides_Java1_2013/Slides/SourceCodes
+1663582965
+/Giangday/tinDC
+1663583001
+/Giangday/tinDC/TDC
+1663582981
+/Giangday/tinDC/TDC/Baitap 2011-2012
+1663582982
+/Giangday/tinDC/TDC/Baitap 2011-2012/Baitap 2011-2012
+1663583001
+/Giangday/tinDC/TDC_BK
+1663583009
+/Giangday/tinDC/TDC_BK/Slides
+1663583033
+/Giangday/Tinhtoansongsong
+1663583232
+/Giangday/Tinhtoansongsong/De thi
+1663583059
+/Giangday/Tinhtoansongsong/Diem
+1663583060
+/Giangday/Tinhtoansongsong/Lap trinh song song
+1663583104
+/Giangday/Tinhtoansongsong/Lap trinh song song/CUDA
+1663583071
+/Giangday/Tinhtoansongsong/Lap trinh song song/Lap trinh nang cao Java
+1663583094
+/Giangday/Tinhtoansongsong/Lap trinh song song/Lap trinh nang cao Java/Code
+1663583094
+/Giangday/Tinhtoansongsong/Lap trinh song song/MPI
+1663583103
+/Giangday/Tinhtoansongsong/Lap trinh song song/openmpprogramming
+1663583145
+/Giangday/Tinhtoansongsong/Lap trinh song song/openmpprogramming/OpenMP_files
+1663583144
+/Giangday/Tinhtoansongsong/Lap trinh song song/openmpprogramming/OpenMP.org_files
+1663583154
+/Giangday/Tinhtoansongsong/Slide Chuan
+1663583154
+/Giangday/Tinhtoansongsong/Slides Tinh toan song song
+1663583184
+/Giangday/Tinhtoansongsong/slide_Thieu
+1663583215
+/Giangday/Tinhtoansongsong/Tai chuc Tinh toan song song
+1663583231
+/Giangday/Tinhtoansongsong/tieng anh
+1663583248
+/Giangday/Unity3D
+1663691778
+/HocTiengAnh
+1663657616
+/HocTiengAnh/baitho
+1663583851
+/HocTiengAnh/luyện thi ielts
+1663583889
+/HocTiengAnh/luyện thi ielts/AWL - VietNamese
+1663583889
+/HocTiengAnh/luyện thi ielts/Châu
+1663583902
+/Multimedia
+1663583929
+/Multimedia/ppt
+1663583990
+/Music
+1663584402
+/Music/Trịnh Công Sơn
+1663584418
+/Nhanxet
+1663590358
+/PiProjects
+1663584421
+/PiProjects/OrangePiPC
+1663585149
+/PiProjects/OrangePiPC/Aes
+1663584430
+/PiProjects/OrangePiPC/Aes/mytest
+1663584433
+/PiProjects/OrangePiPC/CallJavaMethods
+1663584437
+/PiProjects/OrangePiPC/C_Ipc
+1663584471
+/PiProjects/OrangePiPC/C_Ipc/Logs
+1663584472
+/PiProjects/OrangePiPC/C_Ipc_ToFiles
+1663584490
+/PiProjects/OrangePiPC/C_Ipc_ToFiles/Logs
+1663584490
+/PiProjects/OrangePiPC/ForRSync
+1663584491
+/PiProjects/OrangePiPC/ForRSync/sdf
+1663584491
+/PiProjects/OrangePiPC/HttpForward
+1663584492
+/PiProjects/OrangePiPC/Https
+1663584495
+/PiProjects/OrangePiPC/LimitTypes
+1663584497
+/PiProjects/OrangePiPC/Logger
+1663584501
+/PiProjects/OrangePiPC/LongLongInt
+1663584504
+/PiProjects/OrangePiPC/MainDrive_Client1
+1663584524
+/PiProjects/OrangePiPC/MainDrive_Client1/Logs
+1663584522
+/PiProjects/OrangePiPC/MainDrive_Client1/tmp
+1663584524
+/PiProjects/OrangePiPC/MainDrive_Client1/www
+1663584525
+/PiProjects/OrangePiPC/MyDisk
+1663584560
+/PiProjects/OrangePiPC/MyDisk/DisplayDirectoryContents
+1663584538
+/PiProjects/OrangePiPC/MyDisk/DisplayDirectoryContents/.images
+1663584545
+/PiProjects/OrangePiPC/MyDisk/DisplayDirectoryContents/.images/gif
+1663584546
+/PiProjects/OrangePiPC/MyDisk/images
+1663584555
+/PiProjects/OrangePiPC/MyDisk/output
+1663584558
+/PiProjects/OrangePiPC/MyDisk/www
+1663584559
+/PiProjects/OrangePiPC/MyDisk/www_trash
+1663584560
+/PiProjects/OrangePiPC/MyDisk_With_FTP
+1663584600
+/PiProjects/OrangePiPC/MyDisk_With_FTP/DisplayDirectoryContents
+1663584572
+/PiProjects/OrangePiPC/MyDisk_With_FTP/DisplayDirectoryContents/.images
+1663584580
+/PiProjects/OrangePiPC/MyDisk_With_FTP/DisplayDirectoryContents/.images/gif
+1663584581
+/PiProjects/OrangePiPC/MyDisk_With_FTP/images
+1663584591
+/PiProjects/OrangePiPC/MyDisk_With_FTP/logtime
+1663584592
+/PiProjects/OrangePiPC/MyDisk_With_FTP/output
+1663584594
+/PiProjects/OrangePiPC/MyDisk_With_FTP/www
+1663584598
+/PiProjects/OrangePiPC/MyDisk_With_FTP/www/adf
+1663584599
+/PiProjects/OrangePiPC/MyDisk_With_FTP/www/adf/rt
+1663584599
+/PiProjects/OrangePiPC/MyDisk_With_FTP/www_trash
+1663584600
+/PiProjects/OrangePiPC/MyLog
+1663584601
+/PiProjects/OrangePiPC/MyPeer
+1663584607
+/PiProjects/OrangePiPC/Nodejs_Ipc
+1663584609
+/PiProjects/OrangePiPC/Shell
+1663584610
+/PiProjects/OrangePiPC/SocketIO
+1663584611
+/PiProjects/OrangePiPC/Socketv4
+1663584615
+/PiProjects/OrangePiPC/Socketv6
+1663585143
+/PiProjects/OrangePiPC/Socketv6/cygwin_bin
+1663585135
+/PiProjects/OrangePiPC/Socketv6/RecvFile
+1663585138
+/PiProjects/OrangePiPC/Socketv6/TestSocket
+1663585143
+/PiProjects/OrangePiPC/Socketv6/TwoSkTwoTHread
+1663585147
+/PiProjects/OrangePiPC/storageBackup
+1663585147
+/PiProjects/OrangePiPC/Temp
+1663585148
+/PiProjects/OrangePiPC/ThreadPool
+1663585154
+/Tailieu
+1663585216
+/Tailieu/Chương 1. Tổng quan về kỹ thuật lập trình
+1663585182
+/Tailieu/Chương 2. Quản lý bộ nhớFile
+1663585186
+/Tailieu/Chương 3. HàmFile
+1663585189
+/Tailieu/Chương 4. Kỹ thuật viết mã nguồn hiệu quả
+1663585193
+/Tailieu/Chương 5. Phong cách lập trìnhFile
+1663585198
+/Tailieu/Chương 6. Kỹ thuật đệ quyFile
+1663585203
+/Tailieu/Chương 7. Cấu trúc dữ liệuFile
+1663585208
+/Tailieu/Chương 8. Lập trình phòng ngừaFile
+1663585216
+/Tailieu/Chương 9. Gỡ rối, kiểm thử và tinh chỉnh mã nguồn
+1663585224
+/ThongTin_Tep
+1663585225
+/TKNha
+1663585246
+/VoIP
+1663585258
+/VoIP/AllInOne_ClientServeur-master
+1663585254
+/VoIP/Android-VoIP--Server_Client--master
+1663585256
+/VoIP/VoIP-AEC-master
+1663585257
+/VoIP/VoIP-Java-Project-master
+1663585262

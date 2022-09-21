@@ -1,0 +1,3 @@
+localhash
+15000
+/home/dungnt/test.img
