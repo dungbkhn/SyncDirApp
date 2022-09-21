@@ -931,6 +931,29 @@ main(){
 
 		echo "---------------------------------------sync phase------------------------------------------"
 		
+		if [ -f "$hashlogfile" ] ; then
+			while true; do
+				if [ ! -f "$testhashlogfile" ] ; then
+					touch "$testhashlogfile"
+				else
+					truncate --size=0 "$testhashlogfile"
+				fi
+				
+				glb_afDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+				echo "/" >> "$testhashlogfile"
+				echo "$glb_afDirHash" >> "$testhashlogfile"
+				get_dir_hash "$glb_mainmem_local" ""
+				rs=$(diff "$hashlogfile" "$testhashlogfile")
+				
+				if [ "$rs" ] ; then
+					break
+				else							
+					echo 'sleep 2 phut'"----justbeforehash:""$glb_afDirHash"
+					echo '###ok###' >> "$mainlogfile"
+					sleep 120
+				fi
+			done
+		fi
 	
 		while true; do
 			if [ ! -f "$hashlogfile" ] ; then
