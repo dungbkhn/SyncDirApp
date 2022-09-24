@@ -1,27 +1,15 @@
-start syncing...Thứ bảy, 24 Tháng 9 năm 2022 22:57:31 +07
+start syncing...Thứ bảy, 24 Tháng 9 năm 2022 23:56:12 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
+needcopy:119521.xls-----0-----null-----0
+needcopy:yeucaulaptrinh ('copy ' ).txt-----0-----null-----0
 --------------------2 files received valid---------------------
-file ko duoc tinh------------2
---------------------0 files can append hoac copy ---------------------
+file ko duoc tinh------------0
+**********************************file not found
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir yeucaulaptrinh ('copy ' ).txt
+t:touch -d "2022-09-19 16:17:26.787563000 +0700" "/var/res/backup/SyncDir/yeucaulaptrinh ('copy ' ).txt"
+--------------------2 files can append hoac copy ---------------------
 generate new outputdir 0
-getback outputdir 0
-relativepath:/Drivers;compare /home/dungnt/Backup/Store/MySyncDir/Drivers /var/res/backup/SyncDir/Drivers
-generate new outputdir 0
-getback outputdir 0
-relativepath:/Drivers/driver_cp210x;compare /home/dungnt/Backup/Store/MySyncDir/Drivers/driver_cp210x /var/res/backup/SyncDir/Drivers/driver_cp210x
-generate new outputfile 0
-getback outputfile 0
---------------------13 files received valid---------------------
-file ko duoc tinh------------13
---------------------0 files can append hoac copy ---------------------
-generate new outputdir 0
-getback outputdir 0
-relativepath:/Drivers/driver_cp210x/.tmp_versions;compare /home/dungnt/Backup/Store/MySyncDir/Drivers/driver_cp210x/.tmp_versions /var/res/backup/SyncDir/Drivers/driver_cp210x/.tmp_versions
-generate new outputfile 0
-getback outputfile 0
---------------------1 files received valid---------------------
-file ko duoc tinh------------1
---------------------0 files can append hoac copy ---------------------
-relativepath:/gf' dfg;compare /home/dungnt/Backup/Store/MySyncDir/gf' dfg /var/res/backup/SyncDir/gf' dfg
+getback outputdir 1
+###error1###

@@ -49,7 +49,7 @@ mtime_temp=""
 
 if [ -f "$memtemp""/""$param1" ] ; then
 
-	while IFS=/ read beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4 afterslash_5
+	while IFS=/ read -r beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4 afterslash_5
 	do
 		names[$count]="$afterslash_1"
 		isfile[$count]="$afterslash_2"

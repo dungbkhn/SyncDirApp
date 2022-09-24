@@ -996,7 +996,7 @@ main(){
 							echo '###ok###' >> "$mainlogfile"
 							sleep 120							
 						else			
-							exit
+							#exit
 							break
 						fi
 					done

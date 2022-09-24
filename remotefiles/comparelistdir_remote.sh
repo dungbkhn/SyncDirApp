@@ -41,7 +41,7 @@ if [ ! -f "$memtemp""/""$param1" ] ; then
 fi
 
 count=0
-while IFS=/ read beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4
+while IFS=/ read -r beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4
 do
 	name[$count]="$afterslash_1"
 	#echo "${name[$count]}"" ""$count"
