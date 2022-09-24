@@ -126,7 +126,9 @@ run_and_check_client(){
 	local clientisrunning
 	local endwhile=0
 	local count=1
-
+	local start_time
+	local elapsed
+	
 	rm $statusfile
 	touch $statusfile
 
@@ -139,36 +141,42 @@ run_and_check_client(){
 	
 		cd "$glb_clienttox_local"
 
+		rm "$nonreadyfile"
+
 		./client_by_tox_protocol & glb_endclienttox_pid=$!
 
 		# "id:""$glb_endclienttox_pid"
 
-		sleep 1
-
-		cd $curdir
+		start_time=$SECONDS
 
 		# $curdir
+		
+		cd $curdir
+
+	
+		while true; do
+		
+			elapsed=$(( SECONDS - start_time ))
+			
+			if [[ $elapsed > 15 ]] && [[ ! -f  $nonreadyfile ]] ; then
+				endwhile=1
+			fi
+
+			if [[ $endwhile -eq 1 ]] ; then 
+				break 
+			else 
+				# "sleep2s"
+				sleep 2
+				count=$(( $count + 1 ))
+				#echo "count:""$count"
+				if [[ $count -eq 900 ]] ; then
+					return 1
+				fi
+			fi
+				
+		done
 	fi
 
-	while true; do
-
-		if [[ ! -f  $nonreadyfile ]] ; then
-			endwhile=1
-		fi
-
-		if [[ $endwhile -eq 1 ]] ; then 
-			break 
-		else 
-			# "sleep2s"
-			sleep 2
-			count=$(( $count + 1 ))
-			#echo "count:""$count"
-			if [[ $count -eq 900 ]] ; then
-				return 1
-			fi
-		fi
-			
-	done
 
 	#echo "client is ready"
 
@@ -854,7 +862,7 @@ main(){
 	else
 		truncate --size=0 "$mainlogfile"
 	fi
-
+	
 	now=$(date)
 	echo "start syncing...""$now" >> "$mainlogfile"
 	
@@ -959,7 +967,7 @@ main(){
 			code=$?		
 			# "code after sync_dir:""$code"
 			rs=$(ps -p $glb_endclienttox_pid | sed -n 2p)
-			glb_befDirHash=$(echo "$glb_befDirHash" | md5sum )
+			#glb_befDirHash=$(echo "$glb_befDirHash" | md5sum )
 			# "rs:""$rs""----beforehash:""$glb_befDirHash"
 
 			if [[ -z "$rs" ]] ; then	
@@ -970,9 +978,9 @@ main(){
 				break				
 			else
 				# "$glb_endclienttox_pid is running"
-				if [ $code -eq 0 ] ; then
+				if [[ $code -eq 0 ]] ; then
 					while true; do
-						if [ ! -f "$testhashlogfile" ] ; then
+						if [[ ! -f "$testhashlogfile" ]] ; then
 							touch "$testhashlogfile"
 						else
 							truncate --size=0 "$testhashlogfile"
@@ -983,12 +991,13 @@ main(){
 						echo "$glb_afDirHash" >> "$testhashlogfile"
 						get_dir_hash "$glb_mainmem_local" ""
 						rs=$(diff "$hashlogfile" "$testhashlogfile")
-						if [ "$rs" ] ; then
-							break
-						else							
+						if [[ -z "$rs" ]] ; then
 							echo 'sleep 2 phut'"----afterhash:""$glb_afDirHash"
 							echo '###ok###' >> "$mainlogfile"
-							sleep 120
+							sleep 120							
+						else			
+							exit
+							break
 						fi
 					done
 				else 
