@@ -1,201 +1,179 @@
-start syncing...Thứ năm, 22 Tháng 9 năm 2022 06:54:06 +07
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
+start syncing...Thứ bảy, 24 Tháng 9 năm 2022 20:21:57 +07
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:119521.xls-----0-----null-----0
+needcopy:119522.xls-----0-----null-----0
+--------------------2 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir 119521.xls
+t:touch -d '2022-09-19 16:17:18.123378000 +0700' '/var/res/backup/SyncDir/119521.xls'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir 119522.xls
+t:touch -d '2022-09-19 16:17:26.787563000 +0700' '/var/res/backup/SyncDir/119522.xls'
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI;compare /home/dungnt/Backup/Store/MySyncDir/AI /var/res/backup/SyncDir/AI
+generate new outputfile 0
+getback outputfile 0
+needcopy:CNN dien giai.docx-----0-----null-----0
+needcopy:fntir2018-neuralir-mitra.pdf-----0-----null-----0
+needcopy:gauss activation.pdf-----0-----null-----0
+needcopy:gradient Descent.docx-----0-----null-----0
+needcopy:gradient Descent.odt-----0-----null-----0
+needcopy:reluICML_gauss activation.pdf-----0-----null-----0
+needcopy:RNN.odt-----0-----null-----0
+needcopy:step by step back progation.docx-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir CNN dien giai.docx
+t:touch -d '2022-09-19 16:18:08.984441000 +0700' '/var/res/backup/SyncDir/AI/CNN dien giai.docx'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir fntir2018-neuralir-mitra.pdf
+t:touch -d '2022-09-19 16:18:12.252507000 +0700' '/var/res/backup/SyncDir/AI/fntir2018-neuralir-mitra.pdf'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gauss activation.pdf
+t:touch -d '2022-09-19 16:18:14.544553000 +0700' '/var/res/backup/SyncDir/AI/gauss activation.pdf'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gradient Descent.docx
+t:touch -d '2022-09-19 16:18:15.660576000 +0700' '/var/res/backup/SyncDir/AI/gradient Descent.docx'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gradient Descent.odt
+t:touch -d '2022-09-19 16:18:25.852781000 +0700' '/var/res/backup/SyncDir/AI/gradient Descent.odt'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir reluICML_gauss activation.pdf
+t:touch -d '2022-09-19 16:18:26.980804000 +0700' '/var/res/backup/SyncDir/AI/reluICML_gauss activation.pdf'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir RNN.odt
+t:touch -d '2022-09-19 16:18:27.540815000 +0700' '/var/res/backup/SyncDir/AI/RNN.odt'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir step by step back progation.docx
+t:touch -d '2022-09-19 16:18:28.760839000 +0700' '/var/res/backup/SyncDir/AI/step by step back progation.docx'
+--------------------8 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI/BackProgation_GradientDescent_Codes;compare /home/dungnt/Backup/Store/MySyncDir/AI/BackProgation_GradientDescent_Codes /var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI/BackProgation_GradientDescent_Codes/Codes;compare /home/dungnt/Backup/Store/MySyncDir/AI/BackProgation_GradientDescent_Codes/Codes /var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes
+generate new outputfile 0
+getback outputfile 0
+needcopy:ConvertImage.class-----0-----null-----0
+needcopy:ConvertImage.java-----0-----null-----0
+needcopy:ImagePro.class-----0-----null-----0
+needcopy:ImagePro.java-----0-----null-----0
+needcopy:imgPerceptron.class-----0-----null-----0
+needcopy:imgPerceptron.java-----0-----null-----0
+needcopy:MainBP.class-----0-----null-----0
+needcopy:MainBP.java-----0-----null-----0
+needcopy:Num00_bin.png-----0-----null-----0
+needcopy:Num01_bin.png-----0-----null-----0
+needcopy:Num02_bin.png-----0-----null-----0
+needcopy:Num03_bin.png-----0-----null-----0
+needcopy:Num04_bin.png-----0-----null-----0
+needcopy:Num05_bin.png-----0-----null-----0
+needcopy:Num06_bin.png-----0-----null-----0
+needcopy:Num07_bin.png-----0-----null-----0
+needcopy:Num08_bin.png-----0-----null-----0
+needcopy:Num09_bin.png-----0-----null-----0
+needcopy:perceptron.class-----0-----null-----0
+needcopy:perceptron.java-----0-----null-----0
+--------------------20 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ConvertImage.class
+t:touch -d '2022-09-19 16:18:31.092886000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/ConvertImage.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ConvertImage.java
+t:touch -d '2022-09-19 16:18:31.648897000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/ConvertImage.java'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ImagePro.class
+t:touch -d '2022-09-19 16:18:32.208908000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/ImagePro.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ImagePro.java
+t:touch -d '2022-09-19 16:18:32.716918000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/ImagePro.java'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir imgPerceptron.class
+t:touch -d '2022-09-19 16:18:33.328930000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/imgPerceptron.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir imgPerceptron.java
+t:touch -d '2022-09-19 16:18:33.988943000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/imgPerceptron.java'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MainBP.class
+t:touch -d '2022-09-19 16:18:34.500953000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/MainBP.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MainBP.java
+t:touch -d '2022-09-19 16:18:35.108965000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/MainBP.java'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num00_bin.png
+t:touch -d '2022-09-19 16:18:35.620976000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num00_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num01_bin.png
+t:touch -d '2022-09-19 16:18:36.076985000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num01_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num02_bin.png
+t:touch -d '2022-09-19 16:18:36.584995000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num02_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num03_bin.png
+t:touch -d '2022-09-19 16:18:37.197007000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num03_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num04_bin.png
+t:touch -d '2022-09-19 16:18:37.761018000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num04_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num05_bin.png
+t:touch -d '2022-09-19 16:18:38.281028000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num05_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num06_bin.png
+t:touch -d '2022-09-19 16:18:38.841039000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num06_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num07_bin.png
+t:touch -d '2022-09-19 16:18:39.349049000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num07_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num08_bin.png
+t:touch -d '2022-09-19 16:18:39.913061000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num08_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Num09_bin.png
+t:touch -d '2022-09-19 16:18:40.425071000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/Num09_bin.png'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir perceptron.class
+t:touch -d '2022-09-19 16:18:41.041083000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/perceptron.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir perceptron.java
+t:touch -d '2022-09-19 16:18:41.649095000 +0700' '/var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes/perceptron.java'
+--------------------20 files can append hoac copy ---------------------
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:AllInOne_ClientServeur-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir AllInOne_ClientServeur-master.zip
+t:touch -d '2022-09-19 18:00:54.900328000 +0700' '/var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master/AllInOne_ClientServeur-master.zip'
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+needcopy:Android-VoIP--Server_Client--master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Android-VoIP--Server_Client--master.zip
+t:touch -d '2022-09-19 18:00:56.592312000 +0700' '/var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master/Android-VoIP--Server_Client--master.zip'
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:VoIP-AEC-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-AEC-master.zip
+t:touch -d '2022-09-19 18:00:57.716302000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-AEC-master/VoIP-AEC-master.zip'
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d '2022-09-19 18:00:58.936290000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/ClientThread.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d '2022-09-19 18:00:59.600284000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/MicTest.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+t:touch -d '2022-09-19 18:01:00.160279000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/MicTest.java'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir README.md
+t:touch -d '2022-09-19 18:01:00.772273000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/README.md'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ServerThread.class
+t:touch -d '2022-09-19 18:01:01.280269000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/ServerThread.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.class
+t:touch -d '2022-09-19 18:01:01.844263000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/UDPTalk.class'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.java
+t:touch -d '2022-09-19 18:01:02.356259000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/UDPTalk.java'
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-Java-Project-master.zip
+t:touch -d '2022-09-19 18:01:02.864254000 +0700' '/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/VoIP-Java-Project-master.zip'
+--------------------8 files can append hoac copy ---------------------
 ###ok###
 ###ok###
 ###ok###

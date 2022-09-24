@@ -5,7 +5,7 @@
 shopt -s dotglob
 shopt -s nullglob
 
-if [ -f "./config/syncfolder" ] ; then
+if [[ -f "./config/syncfolder" ]] ; then
 	glb_mainmem_local=$(head -n 1 "./config/syncfolder")
 	echo "Dir will sync:""$glb_mainmem_local"
 else
@@ -45,22 +45,13 @@ glb_prt=2
 mech(){
 	local param=$1
 	
-	if [ $glb_prt -eq 1 ]; then
+	if [[ $glb_prt -eq 1 ]] ; then
 		echo "$param"
-	elif [ $glb_prt -eq 2 ]; then
+	elif [[ $glb_prt -eq 2 ]] ; then
 		echo "$param" >> "$mainlogfile"
-	elif [ $glb_prt -eq 3 ]; then
+	elif [[ $glb_prt -eq 3 ]] ; then
 		echo "$param"
 		echo "$param" >> "$mainlogfile"
-	fi
-}
-
-myprintf(){
-	local param1=$1
-	local param2=$2
-	
-	if [ $prt -eq 1 ]; then
-			printf "$param1"": %s\n" "$param2"
 	fi
 }
 
@@ -78,25 +69,25 @@ run_command_in_remote(){
 	local returncode="1"
 	local data
 
-	if [ -f $resultfile ] ; then 
+	if [[ -f $resultfile ]] ; then 
 		rm $resultfile
 	fi
-	if [ -f $statusfile ] ; then 
+	if [[ -f $statusfile ]] ; then 
 		rm $statusfile
 	fi
-	if [ -f $okfile ] ; then 
+	if [[ -f $okfile ]] ; then 
 		rm $okfile
 	fi
 
-	if [ "$sw" == "1" ] ; then
+	if [[ "$sw" == "1" ]] ; then
 		echo "cmd" > $tempcmdfile
-	elif [ "$sw" == "2" ] ; then
+	elif [[ "$sw" == "2" ]] ; then
 		echo "down" > $tempcmdfile
-	elif [ "$sw" == "3" ] ; then
+	elif [[ "$sw" == "3" ]] ; then
 		echo "up" > $tempcmdfile
-	elif [ "$sw" == "4" ] ; then
+	elif [[ "$sw" == "4" ]] ; then
 		echo "hash" > $tempcmdfile
-	elif [ "$sw" == "5" ] ; then
+	elif [[ "$sw" == "5" ]] ; then
 		echo "localhash" > $tempcmdfile
 		echo $hashsize >> $tempcmdfile	
 	fi
@@ -106,13 +97,13 @@ run_command_in_remote(){
 	mv $tempcmdfile $cmdfile	
 
 	while true; do
-		if [ ! -f $cmdfile ] ; then
+		if [[ ! -f $cmdfile ]] ; then
 			
-			if [ -f $statusfile ] ; then
+			if [[ -f $statusfile ]] ; then
 				returncode=$(cat $statusfile)
 			fi
 			
-			if [ -f $resultfile ] ; then
+			if [[ -f $resultfile ]] ; then
 				data=$(<$resultfile)
 				echo "$data"
 			fi
@@ -139,11 +130,11 @@ run_and_check_client(){
 	rm $statusfile
 	touch $statusfile
 
-	if [ $glb_endclienttox_pid != 0 ] ; then
+	if [[ $glb_endclienttox_pid != 0 ]] ; then
 		clientisrunning=$(ps $glb_endclienttox_pid | grep client_by_tox_protocol)	
 	fi
 
-	if [ ! "$clientisrunning" ] ; then	
+	if [[ ! "$clientisrunning" ]] ; then	
 		echo "client is not running, need run client"
 	
 		cd "$glb_clienttox_local"
@@ -161,18 +152,18 @@ run_and_check_client(){
 
 	while true; do
 
-		if [ ! -f  $nonreadyfile ] ; then
+		if [[ ! -f  $nonreadyfile ]] ; then
 			endwhile=1
 		fi
 
-		if [ $endwhile -eq 1 ] ; then 
+		if [[ $endwhile -eq 1 ]] ; then 
 			break 
 		else 
 			# "sleep2s"
 			sleep 2
 			count=$(( $count + 1 ))
 			#echo "count:""$count"
-			if [ $count -eq 900 ] ; then
+			if [[ $count -eq 900 ]] ; then
 				return 1
 			fi
 		fi
@@ -212,7 +203,7 @@ merge_from_server(){
 	code=$?
 	mech "generate outputfile:""${code}"
 
-	if [ $code -ne 0 ] ; then
+	if [[ $code -ne 0 ]] ; then
 		return 1
 	fi
 	
@@ -223,10 +214,10 @@ merge_from_server(){
 	code=$?
 	mech "down outputfile:""${code}"
 
-	if [ $code -ne 0 ] ; then
+	if [[ $code -ne 0 ]] ; then
 		return 1
 	else
-		if [ -f $glb_memtemp_local/tempfile ] ; then
+		if [[ -f $glb_memtemp_local/tempfile ]] ; then
 			mv $glb_memtemp_local/tempfile $glb_memtemp_local/${outputfile}
 		else
 			#zero file
@@ -256,22 +247,22 @@ merge_from_server(){
 	
 
 	for i in "${!name[@]}" ; do
-		if [ "${type[$i]}" != "d" ] ; then
+		if [[ "${type[$i]}" != "d" ]] ; then
 			#mech "check filename:""${name[$i]}"
 			mech "check filename:""$dir1""$interpath""/""${name[$i]}"
 
-			if [ ! -f "$dir1""$interpath""/""${name[$i]}" ] ; then
+			if [[ ! -f "$dir1""$interpath""/""${name[$i]}" ]] ; then
 				rm "$glb_memtemp_local"/tempfile
 				rs=$(run_command_in_remote "2" //x//"$interpath""/""${name[$i]}")
 				code=$?
 
-				if [ $code -ne 0 ] ; then
+				if [[ $code -ne 0 ]] ; then
 					return 1
 				fi
 
 				mech "down outputfile"
 
-				if [ "$code" == "0" ] ; then
+				if [[ "$code" == "0" ]] ; then
 					mv $glb_memtemp_local/tempfile "$dir1""$interpath""/""${name[$i]}"
 					s=$(stat -c %y "$dir1""$interpath""/""${name[$i]}")
 					k="$dir2""$interpath""/""${name[$i]}"
@@ -281,7 +272,7 @@ merge_from_server(){
 					rs=$(run_command_in_remote "1" "${t}")
 					code=$?
 
-					if [ $code -ne 0 ] ; then
+					if [[ $code -ne 0 ]] ; then
 						return 1
 					fi
 				fi
@@ -291,9 +282,9 @@ merge_from_server(){
 	
 
 	for i in "${!name[@]}" ; do
-		if [ "${type[$i]}" == "d" ] ; then
-			if [ ! -d "$dir1""$interpath""/""${name[$i]}" ] ; then
-				if [ -d "$dir1""$interpath" ] ; then
+		if [[ "${type[$i]}" == "d" ]] ; then
+			if [[ ! -d "$dir1""$interpath""/""${name[$i]}" ]] ; then
+				if [[ -d "$dir1""$interpath" ]] ; then
 					mkdir "$dir1""$interpath""/""${name[$i]}"
 				fi
 			fi
@@ -301,7 +292,7 @@ merge_from_server(){
 			merge_from_server "$dir1" "$dir2" "$interpath""/""${name[$i]}"
 			code=$?
 			
-			if [ $code -ne 0 ] ; then
+			if [[ $code -ne 0 ]] ; then
 				return 1
 			fi
 		fi
@@ -334,7 +325,7 @@ find_same_files_in_list () {
 	touch "$glb_memtemp_local"/"$listfiles"
 	
 	for pathname in "$dir1"/* ;do
-		if [ -f "$pathname" ] ; then 
+		if [[ -f "$pathname" ]] ; then 
 			pathname=$(basename "$pathname")
 			md5hash=$(head -c 1024 "$dir1"/"$pathname" | md5sum | awk '{ print $1 }')
 			#md5tailhash=$(get_src_content_file_md5sum "$pathname")
@@ -348,14 +339,14 @@ find_same_files_in_list () {
 
 	listfilesize=$(stat -c %s "$glb_memtemp_local"/"$listfiles")
 
-	if [ $listfilesize -eq 0 ] ; then 
+	if [[ $listfilesize -eq 0 ]] ; then 
 		return 0
 	fi
 
 	rs=$(run_command_in_remote "3" "//,//$glb_memtemp_local"/"$listfiles")
 	code=$?
 
-	if [ "$code" != "0" ] ; then
+	if [[ "$code" != "0" ]] ; then
 		return 1
 	fi	
 	
@@ -366,7 +357,7 @@ find_same_files_in_list () {
 	code=$?
 	mech "generate new outputfile ""$code"
 
-	if [ "$code" != "0" ] ; then
+	if [[ "$code" != "0" ]] ; then
 		return 1
 	fi
 
@@ -377,8 +368,8 @@ find_same_files_in_list () {
 	code=$?
 	mech "getback outputfile ""$code"
 	
-	if [ "$code" == "0" ] ; then
-		if [ -f $glb_memtemp_local/tempfile ] ; then
+	if [[ "$code" == "0" ]] ; then
+		if [[ -f $glb_memtemp_local/tempfile ]] ; then
 			mv $glb_memtemp_local/tempfile $glb_memtemp_local/${outputfile_inremote}
 			return 0
 		else
@@ -410,13 +401,13 @@ find_same_dirs_in_list () {
 	touch "$glb_memtemp_local"/"$listfiles"
 	
 	for pathname in "$dir1"/* ; do
-		if [ -d "$pathname" ] ; then 
+		if [[ -d "$pathname" ]] ; then 
 			pathname=$(basename "$pathname")
 			printf "%s/b/%s/%s\n" "./""$pathname" "d" "0" >> "$glb_memtemp_local"/"$listfiles"
 			count=0
 
 			for subpathname in "$dir1"/"$pathname"/* ; do
-				if [ -d "$subpathname" ] ; then 
+				if [[ -d "$subpathname" ]] ; then 
 					subpathname=$(basename "$subpathname")
 					printf "%s/n/%s/%s\n" "./""$subpathname" "d" "1" >> "$glb_memtemp_local"/"$listfiles"
 				else
@@ -424,7 +415,7 @@ find_same_dirs_in_list () {
 					printf "%s/n/%s/%s\n" "./""$subpathname" "f" "1" >> "$glb_memtemp_local"/"$listfiles"
 				fi
 				count=$(($count + 1))
-				if [ "$count" -eq 5 ] ; then
+				if [[ "$count" == 5 ]] ; then
 					break
 				fi
 			done
@@ -435,14 +426,14 @@ find_same_dirs_in_list () {
 	
 	listfilesize=$(stat -c %s "$glb_memtemp_local"/"$listfiles")
 
-	if [ $listfilesize -eq 0 ] ; then 
+	if [[ $listfilesize -eq 0 ]] ; then 
 		return 0
 	fi
 
 	rs=$(run_command_in_remote "3" "//,//$glb_memtemp_local"/"$listfiles")
 	code=$?
 
-	if [ "$code" != "0" ] ; then
+	if [[ "$code" != "0" ]] ; then
 		return 1
 	fi
 
@@ -452,7 +443,7 @@ find_same_dirs_in_list () {
 	code=$?
 	mech "generate new outputdir ""$code"
 
-	if [ "$code" != "0" ] ; then
+	if [[ "$code" != "0" ]] ; then
 		return 1
 	fi
 
@@ -463,8 +454,8 @@ find_same_dirs_in_list () {
 	code=$?
 	mech "getback outputdir ""$code"
 	
-	if [ "$code" == "0" ] ; then
-		if [ -f $glb_memtemp_local/tempfile ] ; then
+	if [[ "$code" == "0" ]] ; then
+		if [[ -f $glb_memtemp_local/tempfile ]] ; then
 			mv $glb_memtemp_local/tempfile $glb_memtemp_local/${outputdir_inremote}
 			return 0
 		else 
@@ -510,7 +501,7 @@ append_file_with_hash_checking(){
 
 	# "filesize:""$filesize"
 
-	if [ -f "$dir1""$interpath"/"$filename" ] ; then		
+	if [[ -f "$dir1""$interpath"/"$filename" ]] ; then		
 		result=$(run_command_in_remote "5" "$glb_mainmem_local""${interpath}""/""${filename}" "$filesize")
 	
 		code=$?
@@ -518,16 +509,16 @@ append_file_with_hash_checking(){
 		hashlocalfile="$result"
 		# "hashlocal:""$hashlocalfile"
 		
-		if [ "$hashlocalfile" == "$hashremotefile" ] ; then
+		if [[ "$hashlocalfile" == "$hashremotefile" ]] ; then
 			mech 'has same md5hash after truncate-->continue append'
 			mtime=$(stat "${glb_mainmem_local}${interpath}/${filename}" -c %Y)
-			if [ "$mtime" ] ; then
+			if [[ -z "$mtime" ]] ; then
+				mech 'file not found'
+				return 252				
+			else
 				append_native_file "$interpath" "$filename" 0 "$mtime"
 				code="$?"				
 				return "$code"
-			else
-				mech 'file not found'
-				return 252
 			fi
 		else
 			mech 'different md5hash after truncate-->copy total file'
@@ -548,19 +539,19 @@ append_native_file(){
 	local s k t
 	local mtimeafterup
 
-	if [ "$wantcopy" == "1" ] ; then
+	if [[ "$wantcopy" == "1" ]] ; then
 		rs=$(run_command_in_remote "1" "test -f $glb_memtemp_remote/tempfile")
 		code=$?
 
-		if [ "$code" == "0" ] ; then			
+		if [[ "$code" == "0" ]] ; then			
 			rs=$(run_command_in_remote "1" "rm $glb_memtemp_remote/tempfile")
 			code=$?
 
-			if [ "$code" != "0" ] ; then
+			if [[ "$code" != "0" ]] ; then
 				return 255
 			fi
 		#code = 1 nghia la tempfile ko ton tai, != 1 la loi khac
-		elif [ "$code" != "1" ] ; then
+		elif [[ "$code" != "1" ]] ; then
 			return 255
 		fi
 	fi
@@ -568,13 +559,13 @@ append_native_file(){
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?
 
-	if [ "$code" != "0" ] ; then
+	if [[ "$code" != "0" ]] ; then
 		return 1;
 	fi
 
 	mtimeafterup=$(stat "${glb_mainmem_local}${pathtofile}/${filename}" -c %Y)
 
-	if [ "$mtimebeforeup" == "$mtimeafterup" ] ; then
+	if [[ "$mtimebeforeup" == "$mtimeafterup" ]] ; then
 
 		s=$(stat -c %y "${glb_mainmem_local}${pathtofile}/${filename}")
 		k="${glb_mainmem_remote}${pathtofile}/${filename}"
@@ -591,7 +582,7 @@ append_native_file(){
 		rs=$(run_command_in_remote "1" "${t}")
 		code=$?	
 
-		if [ "$code" != "0" ] ; then
+		if [[ "$code" != "0" ]] ; then
 			return 1
 		else
 			return 0
@@ -612,13 +603,13 @@ copy_file_to_remote() {
 	
 	mtime=$(stat "${glb_mainmem_local}${pathtofile}/${filename}" -c %Y)
 	
-	if [ "$mtime" ] ; then
+	if [[ -z "$mtime" ]] ; then
+		mech 'file not found --> mtime not found'
+		return 255		
+	else
 		append_native_file "$pathtofile" "$filename" $regardlesstempfile "$mtime"
 		code="$?"
 		return "$code"
-	else
-		mech 'file not found --> mtime not found'
-		return 255
 	fi
 }
 
@@ -665,20 +656,20 @@ sync_dir(){
 	find_same_files_in_list "$param1""$relativepath" "$param2""$relativepath"
 	code=$?
 
-	if [ "$code" == "1" ] ; then
+	if [[ "$code" == "1" ]] ; then
 		return 1
 	fi
 
 	#cat "$glb_memtemp_local""/""$outputfile_inremote"
 
-	if [ -f "$glb_memtemp_local""/""$outputfile_inremote" ] ; then
+	if [[ -f "$glb_memtemp_local""/""$outputfile_inremote" ]] ; then
 		count=0
 		countother=0
 		total=0
 		while IFS=/ read beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4 afterslash_5 afterslash_6 afterslash_7
 		do
-			if [ "$afterslash_1" != "" ] ; then
-				if [ "$afterslash_2" == "0" ] ; then
+			if [[ "$afterslash_1" != "" ]] ; then
+				if [[ "$afterslash_2" == "0" ]] ; then
 					name[$count]="$afterslash_1"
 					size[$count]="$afterslash_4"
 					md5hash[$count]="$afterslash_5"
@@ -687,7 +678,7 @@ sync_dir(){
 					mech "needappend:""${name[$count]}""-----""${size[$count]}""-----""${md5hash[$count]}""-----""${mtime[$count]}"
 					apporcop[$count]=1
 					count=$(($count + 1))
-				elif [ "$afterslash_2" == "4" ] || [ "$afterslash_2" == "5" ] ; then
+				elif [[ "$afterslash_2" == "4" ]] || [[ "$afterslash_2" == "5" ]] ; then
 					name[$count]="$afterslash_1"
 					size[$count]="$afterslash_4"
 					md5hash[$count]="$afterslash_5"
@@ -702,7 +693,7 @@ sync_dir(){
 					countother=$(($countother + 1))
 				fi
 				
-				if [ "$afterslash_2" != "3" ] ; then
+				if [[ "$afterslash_2" != "3" ]] ; then
 					total=$(($total + 1))
 				fi
 			else
@@ -728,9 +719,9 @@ sync_dir(){
 			code=$?
 
 			#neu tim thay
-			if [ "$code" == "0" ] && [ "$findresult" ] ; then
+			if [[ "$code" == "0" ]] && [[ "$findresult" ]] ; then
 				# "nhung file giong ten nhung khac attribute:""$findresult"
-				if [ "${apporcop[$i]}" == "1" ] ; then
+				if [[ "${apporcop[$i]}" == "1" ]] ; then
 					#file local da bi modify (ko ro vi tri bi modify) ---> append with hash
 					mech "->append:""mtimelc:""${mtime_local[$i]}"" mtime:""${mtime[$i]}""-""$param1"" ""$param2"" ""${name[$i]}"" ""${size[$i]}"					
 				else
@@ -741,12 +732,12 @@ sync_dir(){
 					rs=$(copy_file_to_remote "$relativepath" "${name[$i]}" 0)
 					code="$?"
 
-					if [ "$code" == "1" ] ; then
+					if [[ "$code" == "1" ]] ; then
 						#try to stop sync
 						echo "cannotcp   ""$relativepath""/""${name[$i]}"
 						mech "cannotcp   ""$relativepath""/""${name[$i]}"
 						return 1
-					elif [ "$code" == "254" ] ; then
+					elif [[ "$code" == "254" ]] ; then
 						glb_befDirHash="none"
 						break
 					else
@@ -767,11 +758,11 @@ sync_dir(){
 	find_same_dirs_in_list "$param1""$relativepath" "$param2""$relativepath"
 	code=$?
 
-	if [ "$code" == "1" ] ; then
+	if [[ "$code" == "1" ]] ; then
 		return 1
 	fi
 
-	if [ -f "$glb_memtemp_local""/""$outputdir_inremote" ] ; then
+	if [[ -f "$glb_memtemp_local""/""$outputdir_inremote" ]] ; then
 		unset beforeslash
 		unset afterslash_1
 		unset afterslash_2
@@ -780,8 +771,8 @@ sync_dir(){
 		while IFS=/ read beforeslash afterslash_1 afterslash_2 afterslash_3
 		do
 			# "$afterslash_1"";""$afterslash_2"
-			if [ "$afterslash_1" != "" ] ; then
-				if [ "$afterslash_2" != "5" ] ; then
+			if [[ "$afterslash_1" != "" ]] ; then
+				if [[ "$afterslash_2" != "5" ]] ; then
 					dirname[$count]="$afterslash_1"
 					count=$(($count + 1))				
 				fi
@@ -801,7 +792,7 @@ sync_dir(){
 			sync_dir "$relativepath"/"${dirname[$i]}"
 			code="$?"
 			
-			if [ "$code" == "1" ] ; then
+			if [[ "$code" == "1" ]] ; then
 				return 1
 			fi
 		done
@@ -842,7 +833,7 @@ get_dir_hash(){
 	local dname
 			
 	for pathname in "$dir_ori"/* ; do
-		if [ -d "$pathname" ] ; then 
+		if [[ -d "$pathname" ]] ; then 
 			dname=$(basename "$pathname")
 			echo "$relative_path""/""$dname" >> "$testhashlogfile"
 			glb_afDirHash=$(stat "$pathname" -c '%Y')
@@ -858,7 +849,7 @@ main(){
 	local flag	
 	local now
 	
-	if [ ! -f "$mainlogfile" ] ; then
+	if [[ ! -f "$mainlogfile" ]] ; then
 		touch "$mainlogfile"
 	else
 		truncate --size=0 "$mainlogfile"
@@ -875,7 +866,7 @@ main(){
 
 		code=$?
 
-		if [ "$code" == "1" ] ; then
+		if [[ "$code" == "1" ]] ; then
 			echo '###error###' >> "$mainlogfile"
 			echo 'sleep 3 phut'
 			sleep 180
@@ -885,15 +876,19 @@ main(){
 		echo "---------------------------------------merge phase------------------------------------------"
 		
 		while true; do
-			if [ ! -f "$glb_stopmerge" ] ; then
+			if [[ ! -f "$glb_stopmerge" ]] ; then
 				merge_from_server "$glb_mainmem_local" "$glb_mainmem_remote" ""
 				code=$?
 				
 				rs=$(ps -p $glb_endclienttox_pid | sed -n 2p)
 				
-				if [ "$rs" ] ; then				
+				if [[ -z "$rs" ]] ; then	
+					# "$glb_endclienttox_pid is not running"
+					flag=1
+					break								
+				else
 					# "$glb_endclienttox_pid is running"
-					if [ $code -eq 0 ] ; then
+					if [[ $code -eq 0 ]] ; then
 						touch "$glb_stopmerge"
 						break
 					else 
@@ -902,17 +897,13 @@ main(){
 						sleep 300
 						continue
 					fi
-				else
-					# "$glb_endclienttox_pid is not running"
-					flag=1
-					break
 				fi
 			else			
 				break
 			fi
 		done
 
-		if [ $flag -eq 1 ] ; then
+		if [[ $flag -eq 1 ]] ; then
 			kill $glb_endclienttox_pid;
 			#nghi 1 phut 
 			sleep 60
@@ -931,9 +922,9 @@ main(){
 
 		echo "---------------------------------------sync phase------------------------------------------"
 		
-		if [ -f "$hashlogfile" ] ; then
+		if [[ -f "$hashlogfile" ]] ; then
 			while true; do
-				if [ ! -f "$testhashlogfile" ] ; then
+				if [[ ! -f "$testhashlogfile" ]] ; then
 					touch "$testhashlogfile"
 				else
 					truncate --size=0 "$testhashlogfile"
@@ -945,18 +936,18 @@ main(){
 				get_dir_hash "$glb_mainmem_local" ""
 				rs=$(diff "$hashlogfile" "$testhashlogfile")
 				
-				if [ "$rs" ] ; then
-					break
-				else							
+				if [[ -z "$rs" ]] ; then
 					echo 'sleep 2 phut'"----justbeforehash:""$glb_afDirHash"
 					echo '###ok###' >> "$mainlogfile"
-					sleep 120
+					sleep 120					
+				else							
+					break
 				fi
 			done
 		fi
 	
 		while true; do
-			if [ ! -f "$hashlogfile" ] ; then
+			if [[ ! -f "$hashlogfile" ]] ; then
 				touch "$hashlogfile"
 			else
 				truncate --size=0 "$hashlogfile"
@@ -971,7 +962,13 @@ main(){
 			glb_befDirHash=$(echo "$glb_befDirHash" | md5sum )
 			# "rs:""$rs""----beforehash:""$glb_befDirHash"
 
-			if [ "$rs" ] ; then				
+			if [[ -z "$rs" ]] ; then	
+				echo '###error2###' >> "$mainlogfile"
+				echo "$glb_endclienttox_pid is not running, sleep 2 phut"
+				#nghi 2 phut 
+				sleep 120
+				break				
+			else
 				# "$glb_endclienttox_pid is running"
 				if [ $code -eq 0 ] ; then
 					while true; do
@@ -1002,12 +999,6 @@ main(){
 				fi
 
 				continue
-			else
-				echo '###error2###' >> "$mainlogfile"
-				echo "$glb_endclienttox_pid is not running, sleep 2 phut"
-				#nghi 2 phut 
-				sleep 120
-				break
 			fi
 		done
 
