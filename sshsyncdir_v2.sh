@@ -338,8 +338,9 @@ find_same_files_in_list () {
 			pathname=$(basename "$pathname")
 			md5hash=$(head -c 1024 "$dir1"/"$pathname" | md5sum | awk '{ print $1 }')
 			#md5tailhash=$(get_src_content_file_md5sum "$pathname")
-			mtime_temp=$(stat "$dir1"/"$pathname" --printf='%y\n')
-			mtime=$(date +'%s' -d "$mtime_temp")
+			#mtime_temp=$(stat "$dir1"/"$pathname" --printf='%y\n')
+			#mtime=$(date +'%s' -d "$mtime_temp")
+			mtime=$(stat "$dir1"/"$pathname" -c %Y)
 			filesize=$(stat -c %s "$dir1"/"$pathname")
 			#printf "%s/%s/%s/%s/%s/%s\n" "./""$pathname" "f" "$filesize" "$md5hash" "$md5tailhash" "$mtime" 
 			printf "%s/%s/%s/%s/%s\n" "./""$pathname" "f" "$filesize" "$md5hash" "$mtime" >> "$glb_memtemp_local"/"$listfiles"
@@ -359,9 +360,9 @@ find_same_files_in_list () {
 		return 1
 	fi	
 	
-
 	pathname=$(echo "$dir2" | tr -d '\n' | xxd -pu -c 1000000)
-
+	echo "pathname_encoded:""$pathname"
+	
 	rs=$(run_command_in_remote "1" "bash ${glb_memtemp_remote}/${glb_compare_listfile_inremote} ${listfiles} ${pathname} ${outputfile_inremote}")
 	code=$?
 	mech "generate new outputfile ""$code"

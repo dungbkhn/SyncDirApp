@@ -1,4 +1,4 @@
-./file g dfg.tx/4/null/0/null/0/0
+./file g dfg.tx/1/file g dfg.tx/0/null/0/0
+./yeucaulaptrinh ('copy ' ).txt/1/yeucaulaptrinh ('copy ' ).txt/0/null/0/0
 ./gf" gf/4/null/0/null/0/0
-./yeucaulaptrinh ('copy ' ).txt/4/null/0/null/0/0
 ./

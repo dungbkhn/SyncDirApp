@@ -1,18 +1,12 @@
-start syncing...Chủ nhật, 25 Tháng 9 năm 2022 18:37:15 +07
+start syncing...Chủ nhật, 25 Tháng 9 năm 2022 20:32:47 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:file g dfg.tx-----0-----null-----0
 needcopy:gf" gf-----0-----null-----0
-needcopy:yeucaulaptrinh ('copy ' ).txt-----0-----null-----0
 --------------------3 files received valid---------------------
-file ko duoc tinh------------0
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir file g dfg.tx
-t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/file g dfg.tx"
+file ko duoc tinh------------2
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
-cannotcp   /gf" gf
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir yeucaulaptrinh ('copy ' ).txt
-t:touch -d "2022-09-19 16:17:26.787563000 +0700" "/var/res/backup/SyncDir/yeucaulaptrinh ('copy ' ).txt"
---------------------3 files can append hoac copy ---------------------
+cannotcp   /gf" gf view errorlog for detail
+--------------------1 files can append hoac copy ---------------------
 ###ok###

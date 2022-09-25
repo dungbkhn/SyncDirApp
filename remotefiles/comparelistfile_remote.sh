@@ -75,12 +75,12 @@ if [[ -f "$memtemp""/""$param1" ]] ; then
 		if [[ ! -d "$pathname" ]] ; then 
 			names_remote[$count]=$(basename "$pathname")
 			hassamefile_remote[$count]=0
-			
 			isfile_remote[$count]="f"
 			filesize_remote[$count]=$(stat -c %s "$pathname")
 			md5hash_remote[$count]=$(head -c 1024 "$pathname" | md5sum | awk '{ print $1 }')
-			mtime_temp=$(stat "$pathname" --printf='%y\n')
-			mtime_remote[$count]=$(date +'%s' -d "$mtime_temp")
+			#mtime_temp=$(stat "$pathname" --printf='%y\n')
+			mtime_remote[$count]=$(stat "$pathname" -c %Y)
+			#mtime_remote[$count]=$(date +'%s' -d "$mtime_temp")
 			#echo "%s/%s/%s/%s/%s\n" "$pathname" "${names_remote[$count]}" "${filesize_remote[$count]}"
 			
 			count=$(($count + 1))
