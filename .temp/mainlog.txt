@@ -1,15 +1,83 @@
-start syncing...Thứ bảy, 24 Tháng 9 năm 2022 23:56:12 +07
+start syncing...Chủ nhật, 25 Tháng 9 năm 2022 16:38:59 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:119521.xls-----0-----null-----0
+needcopy:file g dfg.tx-----0-----null-----0
+needcopy:gf' gf-----0-----null-----0
 needcopy:yeucaulaptrinh ('copy ' ).txt-----0-----null-----0
---------------------2 files received valid---------------------
+--------------------3 files received valid---------------------
 file ko duoc tinh------------0
-**********************************file not found
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir file g dfg.tx
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/file g dfg.tx"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf' gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf' gf"
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir yeucaulaptrinh ('copy ' ).txt
 t:touch -d "2022-09-19 16:17:26.787563000 +0700" "/var/res/backup/SyncDir/yeucaulaptrinh ('copy ' ).txt"
---------------------2 files can append hoac copy ---------------------
+--------------------3 files can append hoac copy ---------------------
 generate new outputdir 0
-getback outputdir 1
-###error1###
+getback outputdir 0
+relativepath:/gf;compare /home/dungnt/Backup/Store/MySyncDir/gf /var/res/backup/SyncDir/gf
+generate new outputdir 0
+getback outputdir 0
+relativepath:/gf/BTL_Nguyễn Tiến Long_Đặng Trung Anh_Đào Trọng Khang_Vũ Tự Học+;compare /home/dungnt/Backup/Store/MySyncDir/gf/BTL_Nguyễn Tiến Long_Đặng Trung Anh_Đào Trọng Khang_Vũ Tự Học+ /var/res/backup/SyncDir/gf/BTL_Nguyễn Tiến Long_Đặng Trung Anh_Đào Trọng Khang_Vũ Tự Học+
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:AllInOne_ClientServeur-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir AllInOne_ClientServeur-master.zip
+t:touch -d "2022-09-19 18:00:54.900328000 +0700" "/var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master/AllInOne_ClientServeur-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+needcopy:Android-VoIP--Server_Client--master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Android-VoIP--Server_Client--master.zip
+t:touch -d "2022-09-19 18:00:56.592312000 +0700" "/var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master/Android-VoIP--Server_Client--master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:VoIP-AEC-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-AEC-master.zip
+t:touch -d "2022-09-19 18:00:57.716302000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-AEC-master/VoIP-AEC-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d "2022-09-19 18:00:58.936290000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/ClientThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d "2022-09-19 18:00:59.600284000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/MicTest.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+t:touch -d "2022-09-19 18:01:00.160279000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/MicTest.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir README.md
+t:touch -d "2022-09-19 18:01:00.772273000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/README.md"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ServerThread.class
+t:touch -d "2022-09-19 18:01:01.280269000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/ServerThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.class
+t:touch -d "2022-09-19 18:01:01.844263000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/UDPTalk.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.java
+t:touch -d "2022-09-19 18:01:02.356259000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/UDPTalk.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-Java-Project-master.zip
+t:touch -d "2022-09-19 18:01:02.864254000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/VoIP-Java-Project-master.zip"
+--------------------8 files can append hoac copy ---------------------
+###ok###

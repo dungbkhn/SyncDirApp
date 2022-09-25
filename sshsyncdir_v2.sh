@@ -158,7 +158,7 @@ run_and_check_client(){
 		
 			elapsed=$(( SECONDS - start_time ))
 			
-			if [[ $elapsed > 15 ]] && [[ ! -f  $nonreadyfile ]] ; then
+			if [[ $elapsed > 30 ]] && [[ ! -f  $nonreadyfile ]] ; then
 				endwhile=1
 			fi
 
@@ -578,11 +578,11 @@ append_native_file(){
 		s=$(stat -c %y "${glb_mainmem_local}${pathtofile}/${filename}")
 		k="${glb_mainmem_remote}${pathtofile}/${filename}"
 		
-		if [[ "$pathtofile" == *\'* ]] || [[ "$filename" == *\'* ]]; then
-		  t="touch -d \""${s}"\" \""${k}"\""
-		else
-		  t="touch -d '"${s}"' '"${k}"'"
-		fi
+		#if [[ "$pathtofile" == *\'* ]] || [[ "$filename" == *\'* ]]; then
+		t="touch -d \""${s}"\" \""${k}"\""
+		#else
+		#  t="touch -d '"${s}"' '"${k}"'"
+		#fi
 
 		#t="touch -d '"${s}"' '"${k}"'"
 		mech "t:""${t}"
