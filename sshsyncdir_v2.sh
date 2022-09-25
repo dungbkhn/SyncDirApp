@@ -29,6 +29,7 @@ glb_compare_listdir_inremote=comparelistdir_remote.sh
 glb_compare_listfile_inremote=comparelistfile_remote.sh
 
 mainlogfile="$glb_memtemp_local"/mainlog.txt
+errorlogfile="$glb_memtemp_local"/errorlog.txt
 hashlogfile="$glb_memtemp_local"/hashlog.txt
 testhashlogfile="$glb_memtemp_local"/testhashlog.txt
 
@@ -674,7 +675,7 @@ sync_dir(){
 		count=0
 		countother=0
 		total=0
-		while IFS=/ read beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4 afterslash_5 afterslash_6 afterslash_7
+		while IFS=/ read -r beforeslash afterslash_1 afterslash_2 afterslash_3 afterslash_4 afterslash_5 afterslash_6 afterslash_7
 		do
 			if [[ "$afterslash_1" != "" ]] ; then
 				if [[ "$afterslash_2" == "0" ]] ; then
@@ -720,14 +721,20 @@ sync_dir(){
 		count=0
 		for i in "${!name[@]}"
 		do
-			# "${name[$i]}"
+			#echo "${name[$i]}"
 
-			findresult=$(find "$param1""$relativepath" -maxdepth 1 -type f -name "${name[$i]}")
+			#findresult=$(find "$param1""$relativepath" -maxdepth 1 -type f -name "${name[$i]}")
 			
-			code=$?
-
+			#code=$?
+			if [[ -f "$param1""$relativepath""/""${name[$i]}" ]] ; then
+				code=0
+			else
+				code=1				
+			fi
+			
 			#neu tim thay
-			if [[ "$code" == "0" ]] && [[ "$findresult" ]] ; then
+			#if [[ "$code" == "0" ]] && [[ "$findresult" ]] ; then
+			if [[ "$code" == "0" ]] ; then
 				# "nhung file giong ten nhung khac attribute:""$findresult"
 				if [[ "${apporcop[$i]}" == "1" ]] ; then
 					#file local da bi modify (ko ro vi tri bi modify) ---> append with hash
@@ -742,9 +749,9 @@ sync_dir(){
 
 					if [[ "$code" == "1" ]] ; then
 						#try to stop sync
-						echo "cannotcp   ""$relativepath""/""${name[$i]}"
-						mech "cannotcp   ""$relativepath""/""${name[$i]}"
-						return 1
+						echo "cannotcp   ""$relativepath""/""${name[$i]}" >> "$errorlogfile"
+						mech "cannotcp   ""$relativepath""/""${name[$i]}"" view errorlog for detail"
+						break
 					elif [[ "$code" == "254" ]] ; then
 						glb_befDirHash="none"
 						break
@@ -861,6 +868,12 @@ main(){
 		touch "$mainlogfile"
 	else
 		truncate --size=0 "$mainlogfile"
+	fi
+	
+	if [[ ! -f "$errorlogfile" ]] ; then
+		touch "$errorlogfile"
+	else
+		truncate --size=0 "$errorlogfile"
 	fi
 	
 	now=$(date)
