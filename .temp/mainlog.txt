@@ -1,18 +1,21 @@
-start syncing...Thứ ba, 27 Tháng 9 năm 2022 21:24:44 +07
+start syncing...Thứ ba, 27 Tháng 9 năm 2022 22:54:22 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
+needappend:b.deb-----100000000-----6d3f16c24c003ff605b38a0929e51881-----1664294056
 needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
 needcopy:gf" gf-----0-----null-----0
 --------------------6 files received valid---------------------
-file ko duoc tinh------------4
+file ko duoc tinh------------3
+->append:mtimelc:1664293491 mtime:1664294056-/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir b.deb 100000000
+t:touch -d "2022-09-27 22:44:51.953303944 +0700" "/var/res/backup/SyncDir/b.deb"
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
 cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
 cannotcp   /gf" gf view errorlog for detail
---------------------2 files can append hoac copy ---------------------
+--------------------3 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
 relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#

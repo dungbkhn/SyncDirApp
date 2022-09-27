@@ -105,7 +105,7 @@ if [[ -f "$memtemp""/""$param1" ]] ; then
 					elif [[ ${filesize[$i]} -eq ${filesize_remote[$j]} ]] && [[ "${md5hash[$i]}" != "${md5hash_remote[$j]}" ]] ; then
 						rm "$param2""/""${names_remote[$j]}"
 						printf "./%s/5/null/0/null/0/0\n" "${names[$i]}" >> "$memtemp""/""$param3"
-					elif [[ ${filesize[$i]} -gt ${filesize_remote[$j]} ]] && [[ "${md5hash[$i]}" == "${md5hash_remote[$j]}" ]] ; then
+					elif [[ ${filesize[$i]} -gt ${filesize_remote[$j]} ]] && [[ "${md5hash[$i]}" != "${md5hash_remote[$j]}" ]] ; then
 						rm "$param2""/""${names_remote[$j]}"
 						printf "./%s/5/null/0/null/0/0\n" "${names[$i]}" >> "$memtemp""/""$param3"
 					elif [[ ${filesize[$i]} -lt ${filesize_remote[$j]} ]] ; then
