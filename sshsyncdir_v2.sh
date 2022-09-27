@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #Windows forbidden character of name:  <  >  :  "  /  \  |  ?  * 
-        
+#chua xu ly -z
+
 shopt -s dotglob
 shopt -s nullglob
 
@@ -56,6 +57,17 @@ mech(){
 	fi
 }
 
+contain_special_character_Win_forbidden(){
+	local prm=$1
+
+	if [[ "$prm" == *\** ]] || [[ "$prm" == *\"* ]] || [[ "$prm" == *\?* ]] || [[ "$prm" == *\<* ]] || [[ "$prm" == *\>* ]] || [[ "$prm" == *\:* ]] || [[ "$prm" == *\\* ]] || [[ "$prm" == *\|* ]] ; then
+			#co chua
+			return 0	
+	else
+			#ko chua
+			return 1
+	fi
+}
 
 run_command_in_remote(){
 	local path="$glb_memtemp_local"
@@ -361,7 +373,7 @@ find_same_files_in_list () {
 	fi	
 	
 	pathname=$(echo "$dir2" | tr -d '\n' | xxd -pu -c 1000000)
-	echo "pathname_encoded:""$pathname"
+	#echo "pathname_encoded:""$pathname"
 	
 	rs=$(run_command_in_remote "1" "bash ${glb_memtemp_remote}/${glb_compare_listfile_inremote} ${listfiles} ${pathname} ${outputfile_inremote}")
 	code=$?
@@ -413,6 +425,15 @@ find_same_dirs_in_list () {
 	for pathname in "$dir1"/* ; do
 		if [[ -d "$pathname" ]] ; then 
 			pathname=$(basename "$pathname")
+			
+			contain_special_character_Win_forbidden "$pathname"			
+			code=$?
+			#neu chua ki tu cam
+			if [[ $code -eq 0 ]] ; then
+				echo "cannot sync dir with forbidden character:""$dir1""/""$pathname" >> "$errorlogfile"
+				continue
+			fi		
+			
 			printf "%s/b/%s/%s\n" "./""$pathname" "d" "0" >> "$glb_memtemp_local"/"$listfiles"
 			count=0
 
@@ -851,6 +872,14 @@ get_dir_hash(){
 	for pathname in "$dir_ori"/* ; do
 		if [[ -d "$pathname" ]] ; then 
 			dname=$(basename "$pathname")
+			
+			contain_special_character_Win_forbidden "$dname"			
+			code=$?
+			#neu chua ki tu cam
+			if [[ $code -eq 0 ]] ; then				
+				continue
+			fi
+				
 			echo "$relative_path""/""$dname" >> "$testhashlogfile"
 			glb_afDirHash=$(stat "$pathname" -c '%Y')
 			echo "$glb_afDirHash" >> "$testhashlogfile"			
