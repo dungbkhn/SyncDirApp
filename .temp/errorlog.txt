@@ -1,3 +1,6 @@
 cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743
 cannotcp   /gf" gf
 cannot sync dir with forbidden character:/home/dungnt/Backup/Store/MySyncDir/toi * la nguoi u khach
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+cannotcp   /gf" gf
+cannot sync dir with forbidden character:/home/dungnt/Backup/Store/MySyncDir/toi * la nguoi u khach

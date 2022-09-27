@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #Windows forbidden character of name:  <  >  :  "  /  \  |  ?  * 
-#chua xu ly -z
 
 shopt -s dotglob
 shopt -s nullglob
@@ -543,7 +542,9 @@ append_file_with_hash_checking(){
 		if [[ "$hashlocalfile" == "$hashremotefile" ]] ; then
 			mech 'has same md5hash after truncate-->continue append'
 			mtime=$(stat "${glb_mainmem_local}${interpath}/${filename}" -c %Y)
-			if [[ -z "$mtime" ]] ; then
+			code=$?
+			
+			if [[ $code -ne 0 ]] ; then
 				mech 'file not found'
 				return 252				
 			else
@@ -633,8 +634,8 @@ copy_file_to_remote() {
 	local code
 	
 	mtime=$(stat "${glb_mainmem_local}${pathtofile}/${filename}" -c %Y)
-	
-	if [[ -z "$mtime" ]] ; then
+	code=$?
+	if [[ $code -ne 0 ]] ; then
 		mech 'file not found --> mtime not found'
 		return 255		
 	else
@@ -986,6 +987,12 @@ main(){
 				echo "$glb_afDirHash" >> "$testhashlogfile"
 				get_dir_hash "$glb_mainmem_local" ""
 				rs=$(diff "$hashlogfile" "$testhashlogfile")
+				code=$?
+				if [[ $code -ne 0 ]] ; then
+					#file not found
+					echo "firstime: hashfilelog or testhashfilelog not found, rerun sync"
+					break
+				fi
 				
 				if [[ -z "$rs" ]] ; then
 					echo 'sleep 2 phut'"----justbeforehash:""$glb_afDirHash"
@@ -994,6 +1001,7 @@ main(){
 				else							
 					break
 				fi
+				
 			done
 		fi
 	
@@ -1034,6 +1042,13 @@ main(){
 						echo "$glb_afDirHash" >> "$testhashlogfile"
 						get_dir_hash "$glb_mainmem_local" ""
 						rs=$(diff "$hashlogfile" "$testhashlogfile")
+						code=$?
+						if [[ $code -ne 0 ]] ; then
+							#file not found
+							echo "hashfilelog or testhashfilelog not found, rerun sync"
+							break
+						fi
+				
 						if [[ -z "$rs" ]] ; then
 							echo 'sleep 2 phut'"----afterhash:""$glb_afDirHash"
 							echo '###ok###' >> "$mainlogfile"
