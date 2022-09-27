@@ -1,19 +1,114 @@
-start syncing...Thứ hai, 26 Tháng 9 năm 2022 08:07:25 +07
-beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----
-generate outputfile:0
-down outputfile:0
-check filename:/home/dungnt/Backup/Store/MySyncDir/b.deb
-down outputfile
-t:touch -d "2022-09-26 09:06:00.964360643 +0700" "/var/res/backup/SyncDir/b.deb"
-check filename:/home/dungnt/Backup/Store/MySyncDir/file g dfg.tx
-check filename:/home/dungnt/Backup/Store/MySyncDir/yeucaulaptrinh ('copy ' ).txt
+start syncing...Thứ ba, 27 Tháng 9 năm 2022 07:09:46 +07
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
 needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
 needcopy:gf" gf-----0-----null-----0
---------------------5 files received valid---------------------
-file ko duoc tinh------------3
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
 cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
@@ -21,37 +116,999 @@ cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
 cannotcp   /gf" gf view errorlog for detail
 --------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:AllInOne_ClientServeur-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir AllInOne_ClientServeur-master.zip
+t:touch -d "2022-09-19 18:00:54.900328000 +0700" "/var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master/AllInOne_ClientServeur-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+needcopy:Android-VoIP--Server_Client--master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Android-VoIP--Server_Client--master.zip
+t:touch -d "2022-09-19 18:00:56.592312000 +0700" "/var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master/Android-VoIP--Server_Client--master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:VoIP-AEC-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-AEC-master.zip
+t:touch -d "2022-09-19 18:00:57.716302000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-AEC-master/VoIP-AEC-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d "2022-09-19 18:00:58.936290000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/ClientThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d "2022-09-19 18:00:59.600284000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/MicTest.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+t:touch -d "2022-09-19 18:01:00.160279000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/MicTest.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir README.md
+t:touch -d "2022-09-19 18:01:00.772273000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/README.md"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ServerThread.class
+t:touch -d "2022-09-19 18:01:01.280269000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/ServerThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.class
+t:touch -d "2022-09-19 18:01:01.844263000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/UDPTalk.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.java
+t:touch -d "2022-09-19 18:01:02.356259000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/UDPTalk.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-Java-Project-master.zip
+t:touch -d "2022-09-19 18:01:02.864254000 +0700" "/var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master/VoIP-Java-Project-master.zip"
+--------------------8 files can append hoac copy ---------------------
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
 ###ok###
 ###ok###
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:!@#$%&() -.tx-----0-----null-----0
 needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
 needcopy:gf" gf-----0-----null-----0
 --------------------6 files received valid---------------------
-file ko duoc tinh------------3
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir !@#$%&() -.tx
-t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/!@#$%&() -.tx"
+file ko duoc tinh------------4
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
 cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
 ->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
 t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
 cannotcp   /gf" gf view errorlog for detail
---------------------3 files can append hoac copy ---------------------
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/hello /var/res/backup/SyncDir/VoIP/hello
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/VoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy) /var/res/backup/SyncDir/VoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:AllInOne_ClientServeur-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir AllInOne_ClientServeur-master.zip
+t:touch -d "2022-09-19 18:00:54.900328000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/AllInOne_ClientServeur-master/AllInOne_ClientServeur-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+needcopy:Android-VoIP--Server_Client--master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Android-VoIP--Server_Client--master.zip
+t:touch -d "2022-09-19 18:00:56.592312000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/Android-VoIP--Server_Client--master/Android-VoIP--Server_Client--master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/VoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:VoIP-AEC-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-AEC-master.zip
+t:touch -d "2022-09-19 18:00:57.716302000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-AEC-master/VoIP-AEC-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/VoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d "2022-09-19 18:00:58.936290000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/ClientThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d "2022-09-19 18:00:59.600284000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/MicTest.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+t:touch -d "2022-09-19 18:01:00.160279000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/MicTest.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir README.md
+t:touch -d "2022-09-19 18:01:00.772273000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/README.md"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ServerThread.class
+t:touch -d "2022-09-19 18:01:01.280269000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/ServerThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.class
+t:touch -d "2022-09-19 18:01:01.844263000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/UDPTalk.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.java
+t:touch -d "2022-09-19 18:01:02.356259000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/UDPTalk.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-Java-Project-master.zip
+t:touch -d "2022-09-19 18:01:02.864254000 +0700" "/var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master/VoIP-Java-Project-master.zip"
+--------------------8 files can append hoac copy ---------------------
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/hello /var/res/backup/SyncDir/VoIP/hello
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy) /var/res/backup/SyncDir/VoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/VoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP (copy)/VoIP-Java-Project-master
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+relativepath:/VoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/hello /var/res/backup/SyncDir/VoIP/hello
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP;compare /home/dungnt/Backup/Store/MySyncDir/OoIP /var/res/backup/SyncDir/OoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/OoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/OoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/OoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/hello /var/res/backup/SyncDir/OoIP/hello
+relativepath:/OoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-AEC-master /var/res/backup/SyncDir/OoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/OoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/OoIP;compare /home/dungnt/Backup/Store/MySyncDir/OoIP /var/res/backup/SyncDir/OoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/OoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/OoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/OoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/hello /var/res/backup/SyncDir/OoIP/hello
+relativepath:/OoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-AEC-master /var/res/backup/SyncDir/OoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/OoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
 ###ok###
 ###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
-###ok###
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/OoIP;compare /home/dungnt/Backup/Store/MySyncDir/OoIP /var/res/backup/SyncDir/OoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/OoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/OoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/OoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/hello /var/res/backup/SyncDir/OoIP/hello
+relativepath:/OoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-AEC-master /var/res/backup/SyncDir/OoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/OoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:AllInOne_ClientServeur-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir AllInOne_ClientServeur-master.zip
+t:touch -d "2022-09-19 18:00:54.900328000 +0700" "/var/res/backup/SyncDir/AllInOne_ClientServeur-master/AllInOne_ClientServeur-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+needcopy:Android-VoIP--Server_Client--master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Android-VoIP--Server_Client--master.zip
+t:touch -d "2022-09-19 18:00:56.592312000 +0700" "/var/res/backup/SyncDir/Android-VoIP--Server_Client--master/Android-VoIP--Server_Client--master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/AoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy) /var/res/backup/SyncDir/AoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:AllInOne_ClientServeur-master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir AllInOne_ClientServeur-master.zip
+t:touch -d "2022-09-19 18:00:54.900328000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/AllInOne_ClientServeur-master/AllInOne_ClientServeur-master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/AoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+needcopy:Android-VoIP--Server_Client--master.zip-----0-----null-----0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir Android-VoIP--Server_Client--master.zip
+t:touch -d "2022-09-19 18:00:56.592312000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/Android-VoIP--Server_Client--master/Android-VoIP--Server_Client--master.zip"
+--------------------1 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d "2022-09-19 18:00:58.936290000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/ClientThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d "2022-09-19 18:00:59.600284000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/MicTest.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+t:touch -d "2022-09-19 18:01:00.160279000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/MicTest.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir README.md
+t:touch -d "2022-09-19 18:01:00.772273000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/README.md"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ServerThread.class
+t:touch -d "2022-09-19 18:01:01.280269000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/ServerThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.class
+t:touch -d "2022-09-19 18:01:01.844263000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/UDPTalk.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.java
+t:touch -d "2022-09-19 18:01:02.356259000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/UDPTalk.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-Java-Project-master.zip
+t:touch -d "2022-09-19 18:01:02.864254000 +0700" "/var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master/VoIP-Java-Project-master.zip"
+--------------------8 files can append hoac copy ---------------------
+relativepath:/co;compare /home/dungnt/Backup/Store/MySyncDir/co /var/res/backup/SyncDir/co
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy) /var/res/backup/SyncDir/AoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/AoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/co;compare /home/dungnt/Backup/Store/MySyncDir/co /var/res/backup/SyncDir/co
+relativepath:/OoIP;compare /home/dungnt/Backup/Store/MySyncDir/OoIP /var/res/backup/SyncDir/OoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/OoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/OoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/OoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/hello /var/res/backup/SyncDir/OoIP/hello
+relativepath:/OoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-AEC-master /var/res/backup/SyncDir/OoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/OoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/Project-master;compare /home/dungnt/Backup/Store/MySyncDir/Project-master /var/res/backup/SyncDir/Project-master
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy) /var/res/backup/SyncDir/AoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/AoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/co;compare /home/dungnt/Backup/Store/MySyncDir/co /var/res/backup/SyncDir/co
+relativepath:/OoIP;compare /home/dungnt/Backup/Store/MySyncDir/OoIP /var/res/backup/SyncDir/OoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/OoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/OoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/OoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/hello /var/res/backup/SyncDir/OoIP/hello
+relativepath:/OoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-AEC-master /var/res/backup/SyncDir/OoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/OoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/Project-master1;compare /home/dungnt/Backup/Store/MySyncDir/Project-master1 /var/res/backup/SyncDir/Project-master1
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d "2022-09-19 18:00:58.936290000 +0700" "/var/res/backup/SyncDir/Project-master1/ClientThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d "2022-09-19 18:00:59.600284000 +0700" "/var/res/backup/SyncDir/Project-master1/MicTest.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+t:touch -d "2022-09-19 18:01:00.160279000 +0700" "/var/res/backup/SyncDir/Project-master1/MicTest.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir README.md
+t:touch -d "2022-09-19 18:01:00.772273000 +0700" "/var/res/backup/SyncDir/Project-master1/README.md"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ServerThread.class
+t:touch -d "2022-09-19 18:01:01.280269000 +0700" "/var/res/backup/SyncDir/Project-master1/ServerThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.class
+t:touch -d "2022-09-19 18:01:01.844263000 +0700" "/var/res/backup/SyncDir/Project-master1/UDPTalk.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir UDPTalk.java
+t:touch -d "2022-09-19 18:01:02.356259000 +0700" "/var/res/backup/SyncDir/Project-master1/UDPTalk.java"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir VoIP-Java-Project-master.zip
+t:touch -d "2022-09-19 18:01:02.864254000 +0700" "/var/res/backup/SyncDir/Project-master1/VoIP-Java-Project-master.zip"
+--------------------8 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/Project-master1/a;compare /home/dungnt/Backup/Store/MySyncDir/Project-master1/a /var/res/backup/SyncDir/Project-master1/a
+relativepath:/Project-master1/b;compare /home/dungnt/Backup/Store/MySyncDir/Project-master1/b /var/res/backup/SyncDir/Project-master1/b
+relativepath:/Project-master2;compare /home/dungnt/Backup/Store/MySyncDir/Project-master2 /var/res/backup/SyncDir/Project-master2
+generate new outputfile 0
+getback outputfile 0
+needcopy:ClientThread.class-----0-----null-----0
+needcopy:MicTest.class-----0-----null-----0
+needcopy:MicTest.java-----0-----null-----0
+needcopy:README.md-----0-----null-----0
+needcopy:ServerThread.class-----0-----null-----0
+needcopy:UDPTalk.class-----0-----null-----0
+needcopy:UDPTalk.java-----0-----null-----0
+needcopy:VoIP-Java-Project-master.zip-----0-----null-----0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ClientThread.class
+t:touch -d "2022-09-19 18:00:58.936290000 +0700" "/var/res/backup/SyncDir/Project-master2/ClientThread.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.class
+t:touch -d "2022-09-19 18:00:59.600284000 +0700" "/var/res/backup/SyncDir/Project-master2/MicTest.class"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir MicTest.java
+**********************************file not found
+**********************************file not found
+**********************************file not found
+**********************************file not found
+**********************************file not found
+--------------------8 files can append hoac copy ---------------------
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:dfg \' @#$%^&*)(##$%^&**(~!`1`48743-----0-----null-----0
+needcopy:gf" gf-----0-----null-----0
+--------------------6 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir dfg \' @#$%^&*)(##$%^&**(~!`1`48743
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/dfg \' @#$%^&*)(##$%^&**(~!`1`48743"
+cannotcp   /dfg \' @#$%^&*)(##$%^&**(~!`1`48743 view errorlog for detail
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir gf" gf
+t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/gf" gf"
+cannotcp   /gf" gf view errorlog for detail
+--------------------2 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/aha chi ' tren pho @#;compare /home/dungnt/Backup/Store/MySyncDir/aha chi ' tren pho @# /var/res/backup/SyncDir/aha chi ' tren pho @#
+relativepath:/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy) /var/res/backup/SyncDir/AoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/AoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/AoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/AoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/AoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/AoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/co;compare /home/dungnt/Backup/Store/MySyncDir/co /var/res/backup/SyncDir/co
+relativepath:/OoIP;compare /home/dungnt/Backup/Store/MySyncDir/OoIP /var/res/backup/SyncDir/OoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/OoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/OoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/OoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/hello;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/hello /var/res/backup/SyncDir/OoIP/hello
+relativepath:/OoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-AEC-master /var/res/backup/SyncDir/OoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/OoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/OoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/OoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+relativepath:/Project-master1;compare /home/dungnt/Backup/Store/MySyncDir/Project-master1 /var/res/backup/SyncDir/Project-master1
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/Project-master1/a;compare /home/dungnt/Backup/Store/MySyncDir/Project-master1/a /var/res/backup/SyncDir/Project-master1/a
+relativepath:/Project-master1/b;compare /home/dungnt/Backup/Store/MySyncDir/Project-master1/b /var/res/backup/SyncDir/Project-master1/b
+relativepath:/Project-master2;compare /home/dungnt/Backup/Store/MySyncDir/Project-master2 /var/res/backup/SyncDir/Project-master2
+generate new outputfile 0
+getback outputfile 0
+--------------------2 files received valid---------------------
+file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/Project-master2/a;compare /home/dungnt/Backup/Store/MySyncDir/Project-master2/a /var/res/backup/SyncDir/Project-master2/a
+relativepath:/WoIP (copy);compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy) /var/res/backup/SyncDir/WoIP (copy)
+generate new outputdir 0
+getback outputdir 0
+relativepath:/WoIP (copy)/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/AllInOne_ClientServeur-master /var/res/backup/SyncDir/WoIP (copy)/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/WoIP (copy)/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-AEC-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+relativepath:/WoIP (copy)/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/WoIP (copy)/VoIP-Java-Project-master /var/res/backup/SyncDir/WoIP (copy)/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
 ###ok###
 ###ok###
 ###ok###
