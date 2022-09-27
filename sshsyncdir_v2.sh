@@ -347,7 +347,7 @@ find_same_files_in_list () {
 	for pathname in "$dir1"/* ;do
 		if [[ -f "$pathname" ]] ; then 
 			pathname=$(basename "$pathname")
-			md5hash=$(head -c 1024 "$dir1"/"$pathname" | md5sum | awk '{ print $1 }')
+			md5hash=$(head -c 8192 "$dir1"/"$pathname" | md5sum | awk '{ print $1 }')
 			#md5tailhash=$(get_src_content_file_md5sum "$pathname")
 			#mtime_temp=$(stat "$dir1"/"$pathname" --printf='%y\n')
 			#mtime=$(date +'%s' -d "$mtime_temp")
