@@ -80,6 +80,7 @@ run_command_in_remote(){
 	local hashsize=$3
 	local returncode="1"
 	local data
+	local rs
 	
 	if [[ -f $resultfile ]] ; then 
 		rm $resultfile
@@ -113,15 +114,24 @@ run_command_in_remote(){
 			
 			if [[ -f $statusfile ]] ; then
 				returncode=$(cat $statusfile)
-			fi
-			
-			if [[ -f $resultfile ]] ; then
-				data=$(<$resultfile)
-				echo "$data"
-			fi
+				
+				if [[ -f $resultfile ]] ; then
+					data=$(<$resultfile)
+					echo "$data"
+				fi	
+			else
+				returncode=1			
+			fi					
 
 			break
+		else
+			rs=$(ps -p $glb_endclienttox_pid | sed -n 2p)
+				
+			if [[ -z "$rs" ]] ; then	
+				return 1								
+			fi
 			
+			sleep 1
 		fi
 	done
 
