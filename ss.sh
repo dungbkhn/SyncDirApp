@@ -103,7 +103,7 @@ run_command_in_remote(){
 		echo "localhash" > $tempcmdfile
 		echo $hashsize >> $tempcmdfile	
 	fi
-
+	
 	echo "$command" >> $tempcmdfile		
 		
 	mv $tempcmdfile $cmdfile	
@@ -453,20 +453,20 @@ find_same_dirs_in_list () {
 		fi
 		
 	done	
-
+	
 	listfilesize=$(stat -c %s "$glb_memtemp_local"/"$listfiles")
-	
+
 	if [[ $listfilesize -eq 0 ]] ; then 
-		echo "?/?" >> "$glb_memtemp_local"/"$listfiles"	
+		return 0
 	fi
-	
+
 	rs=$(run_command_in_remote "3" "//,//$glb_memtemp_local"/"$listfiles")
 	code=$?
 
 	if [[ "$code" != "0" ]] ; then
 		return 1
 	fi
-	
+
 	pathname=$(echo "$dir2" | tr -d '\n' | xxd -pu -c 1000000)
 
 	rs=$(run_command_in_remote "1" "bash ${glb_memtemp_remote}/${glb_compare_listdir_inremote} ${listfiles} ${pathname} ${outputdir_inremote}")
@@ -498,6 +498,70 @@ find_same_dirs_in_list () {
 
 #------------------------------ APPEND FILE --------------------------------
 
+append_file_with_hash_checking(){
+	local dir1="$1"
+	local dir2="$2"
+	local interpath="$3"
+	local filename="$4"
+	local hashremotefile
+	local hashlocalfile
+	local filesize
+	local mtime
+	local tg
+
+	local temphashfilename="tempfile.totalmd5sum.being"
+
+	rm "$glb_memtemp_local"/"$temphashfilename"	
+
+	result=$(run_command_in_remote "4" "//x//${interpath}/${filename}")
+	
+	code=$?
+
+	hashremotefile="$result"
+
+	tg="wc -c ""$glb_mainmem_remote""${interpath}""/""${filename}"" | awk ""'{print "'$1'"}'"
+
+	result=$(run_command_in_remote "1" "${tg}")
+	
+	code=$?
+
+	filesize="$result"
+
+	# "$hashremotefile"
+
+	# "filesize:""$filesize"
+
+	if [[ -f "$dir1""$interpath"/"$filename" ]] ; then		
+		result=$(run_command_in_remote "5" "$glb_mainmem_local""${interpath}""/""${filename}" "$filesize")
+	
+		code=$?
+
+		hashlocalfile="$result"
+		# "hashlocal:""$hashlocalfile"
+		
+		if [[ "$hashlocalfile" == "$hashremotefile" ]] ; then
+			mech 'has same md5hash after truncate-->continue append'
+			mtime=$(stat "${glb_mainmem_local}${interpath}/${filename}" -c %Y)
+			code=$?
+			
+			if [[ $code -ne 0 ]] ; then
+				mech 'file not found'
+				return 252				
+			else
+				append_native_file "$interpath" "$filename" 0 "$mtime"
+				code="$?"				
+				return "$code"
+			fi
+		else
+			mech 'different md5hash after truncate-->copy total file'
+			# "$interpath"
+			# "$filename"
+			copy_file_to_remote "$interpath" "$filename"
+		fi
+	fi
+
+}
+
 append_native_file(){
 	local pathtofile=$1
 	local filename=$2
@@ -505,21 +569,10 @@ append_native_file(){
 	local mtimebeforeup=$4
 	local rs code
 	local s k t
-	local mtimeafterup	
-				
-	rs=$(run_command_in_remote "1" "if [[ -f $glb_memtemp_remote/tempfile ]] ; then rm $glb_memtemp_remote/tempfile; fi")
-	code=$?
+	local mtimeafterup
 	
-	if [[ "$code" != "0" ]] ; then		
-		return 255			
-	fi
-	
-	#thu nghiem
-	
-	
-	
-	#ket thuc thu nghiem
-	
+	#vua cop code sang test.h de thu nghiem
+	code=0
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?
 
@@ -701,7 +754,7 @@ sync_dir(){
 				while true; do
 					rs=$(copy_file_to_remote "$relativepath" "${name[$i]}" 0)
 					code="$?"
-					
+
 					if [[ "$code" == "1" ]] ; then
 						#try to stop sync
 						echo "cannotcp   ""$relativepath""/""${name[$i]}" >> "$errorlogfile"
@@ -894,7 +947,15 @@ main(){
 			continue
 		fi
 		
-		
+		#append_native_file "/hello" "tôi o3.mp4" 0 ""
+
+		#find_same_files_in_list /..../MainDir/dir1/d1indir1 /var/res/share/syncdir/dir1/d1indir1				
+
+		#find_same_dirs_in_list "/..../TestSyncDir/MainDir" "/var/res/share/syncdir"					
+
+		#copy_file_to_remote "/hello" "tôi o3.mp4" 0
+
+		#append_file_with_hash_checking "/.../TestSyncDir/MainDir" "/var/res/share/syncdir" "/hello" "tôi o3.mp4"
 
 		echo "---------------------------------------sync phase------------------------------------------"
 		

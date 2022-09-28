@@ -72,6 +72,7 @@ struct ServerStatus {
 	uint64_t timeelapsed; //milli seconds
 };
 
+static int stt_glb_select_tempfile=0;
 static uint64_t stt_glb_mtimeforcmd=0;
 static int stt_glb_ts=0;
 static int stt_glb_msgid;
@@ -97,6 +98,7 @@ static const char stt_glb_str_tempdir[]="/var/res/backup/.Temp";
 //static const char stt_glb_str_lsfile[]="lsfile.txt";
 static char stt_glb_str_hexname[] = "synserverbytoxprotocolDungntUbuntu";
 static const char stt_glb_str_tempfile[] = "tempfile";
+static const char stt_glb_str_tempfile_secondary[] = "tempfilesecondary";
 static const char stt_glb_str_resultfile[] = "resultfile";
 static char stt_glb_str_fullresultfile[LINE_MAX_SIZE];
 static char stt_glb_str_fullpathtofile[LINE_MAX_SIZE];
@@ -581,8 +583,12 @@ int move_file() {
 	char buffer[STREAM_MAX_SIZE];
 	size_t n=0;
 	printf("mv to '%s'\n",stt_glb_str_fullpathtofile);
-    snprintf(cmd, 2*LINE_MAX_SIZE, "mv %s/tempfile '%s'; echo $?;",stt_glb_str_tempdir, stt_glb_str_fullpathtofile);	
-
+	
+	if(stt_glb_select_tempfile==1)
+		snprintf(cmd, 2*LINE_MAX_SIZE, "mv %s/tempfile '%s'; echo $?;",stt_glb_str_tempdir, stt_glb_str_fullpathtofile);	
+	else
+		snprintf(cmd, 2*LINE_MAX_SIZE, "mv %s/tempfilesecondary '%s'; echo $?;",stt_glb_str_tempdir, stt_glb_str_fullpathtofile);	
+		
     buffer[0]='\0';
 	stream = popen(cmd, "r");
 	if (stream) {
@@ -599,8 +605,10 @@ int move_file() {
     //else if(n>0 && buffer[0]=='1') return 0;
     else {
     	printf("mv to '%s'\n",stt_glb_str_fullpathtofile);
-		snprintf(cmd, 2*LINE_MAX_SIZE, "mv %s/tempfile \"%s\"; echo $?;",stt_glb_str_tempdir, stt_glb_str_fullpathtofile);	
-
+    	if(stt_glb_select_tempfile==1)
+			snprintf(cmd, 2*LINE_MAX_SIZE, "mv %s/tempfile \"%s\"; echo $?;",stt_glb_str_tempdir, stt_glb_str_fullpathtofile);	
+		else
+			snprintf(cmd, 2*LINE_MAX_SIZE, "mv %s/tempfilesecondary '%s'; echo $?;",stt_glb_str_tempdir, stt_glb_str_fullpathtofile);	
 		buffer[0]='\0';
 		stream = popen(cmd, "r");
 		if (stream) {
@@ -634,6 +642,7 @@ int truncate_get_size_tempfile(uint64_t curmtimecmd){
 
     ts--;
 
+	printf("ts:%d\nstt_glb_ts:%d\nstt_glb_mtimeforcmd:%lld\nstt_glb_mtimeforcmd:%lld\n",ts,stt_glb_ts,stt_glb_mtimeforcmd,curmtimecmd); 
     if(stt_glb_mtimeforcmd == curmtimecmd){
         if(ts < stt_glb_ts) ts = stt_glb_ts;
     }
@@ -820,12 +829,12 @@ void respond_send_file(uint32_t friend_num, const uint8_t *message){
 
         snprintf(out,LINE_MAX_SIZE,"%d 1 6 %d",stt_glb_msgid,ts);
         printf("out:%s\n",out);
-
+		stt_glb_select_tempfile = 1;
         snprintf(stt_glb_str_fullpathtofile,LINE_MAX_SIZE,"%s%s",stt_glb_str_maindir,message + i + 5);
     } else {
         snprintf(out,LINE_MAX_SIZE,"%d 1 6 0",stt_glb_msgid);
         printf("out:%s\n",out);
-
+		stt_glb_select_tempfile = 0;
         snprintf(stt_glb_str_fullpathtofile,LINE_MAX_SIZE,"%s%s",stt_glb_str_tempdir,message + i + 5);
     }
 
@@ -1542,8 +1551,12 @@ void onFileRecv(Tox *m, uint32_t friendnum, uint32_t filenumber, uint64_t file_s
     size_t path_len = name_length;
 
 
-    snprintf(file_path, file_path_buf_size, "%s/%s",stt_glb_str_tempdir, stt_glb_str_tempfile);
-
+	if(stt_glb_select_tempfile==0){
+		snprintf(file_path, file_path_buf_size, "%s/%s",stt_glb_str_tempdir, stt_glb_str_tempfile_secondary);
+		remove(file_path);//xoa tempfilesecondary truoc khi upload
+	}
+	else
+		snprintf(file_path, file_path_buf_size, "%s/%s",stt_glb_str_tempdir, stt_glb_str_tempfile);
 
     if (path_len >= file_path_buf_size || path_len >= sizeof(ft->file_path) || name_length >= sizeof(ft->file_name)) {
         close_file_transfer(m, ft, TOX_FILE_CONTROL_CANCEL, "File transfer failed: File path too long.");

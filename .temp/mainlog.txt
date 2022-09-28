@@ -1,11 +1,27 @@
-start syncing...Thứ tư, 28 Tháng 9 năm 2022 14:21:40 +07
+start syncing...Thứ tư, 28 Tháng 9 năm 2022 22:17:23 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:b.deb-----0-----null-----0
 --------------------1 files received valid---------------------
-file ko duoc tinh------------0
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir b.deb
-t:touch -d "2022-09-27 22:44:51.953303944 +0700" "/var/res/backup/SyncDir/b.deb"
---------------------1 files can append hoac copy ---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/ddd;compare /home/dungnt/Backup/Store/MySyncDir/ddd /var/res/backup/SyncDir/ddd
+generate new outputdir 0
+getback outputdir 0
+###ok###
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+###ok###
+###ok###
+###ok###
+###ok###
+###ok###
 ###ok###

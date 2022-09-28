@@ -57,6 +57,17 @@ done < "$memtemp""/""$param1"
 
 total=$count
 
+if [[ "$beforeslash" == "?" ]] ; then
+	#echo '--------------------------------xoa het--------------------------------------'
+	for j in "${!name_remote[@]}" ; do
+		#printf "xoa:%s\n" "${name_remote[$j]}"
+		printf "./%s/5/null\n" "${name_remote[$j]}" >> "$memtemp"/"$param3"
+		rm -r "$param2"/"${name_remote[$j]}"
+	done
+	echo './' >> "$memtemp""/""$param3"
+	exit 0
+fi
+
 #get sub dir in remote dir 
 cd "$param2"/
 
