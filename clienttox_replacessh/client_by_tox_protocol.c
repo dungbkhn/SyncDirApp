@@ -1903,6 +1903,11 @@ void run_iterate(uint32_t msecs){
     }
 }
 
+void setup_client_early_status(){
+	snprintf(stt_glb_str_fullnonreadyfile,LINE_MAX_SIZE,"%s/%s", stt_glb_str_clienttempdir,stt_glb_str_nonreadyfile);
+	FILE *fp = fopen(stt_glb_str_fullnonreadyfile,"w");
+    if(fp!=NULL) fclose(fp);  
+}
 
 void setup_client_status(){
 	stt_glb_ptr_cStatus = (struct ClientStatus*)malloc(sizeof(struct ClientStatus));
@@ -1940,18 +1945,18 @@ void setup_client_status(){
     snprintf(stt_glb_str_fullokfile,LINE_MAX_SIZE,"%s/%s", stt_glb_str_clienttempdir,stt_glb_str_okfile);
     snprintf(stt_glb_str_fullstatusfile,LINE_MAX_SIZE,"%s/%s", stt_glb_str_clienttempdir,stt_glb_str_clientstatusfile);
     snprintf(stt_glb_str_fullcmdfile,LINE_MAX_SIZE,"%s/%s", stt_glb_str_clienttempdir,stt_glb_str_cmdfile);
-    snprintf(stt_glb_str_fullnonreadyfile,LINE_MAX_SIZE,"%s/%s", stt_glb_str_clienttempdir,stt_glb_str_nonreadyfile);
+    //snprintf(stt_glb_str_fullnonreadyfile,LINE_MAX_SIZE,"%s/%s", stt_glb_str_clienttempdir,stt_glb_str_nonreadyfile);
     remove(stt_glb_str_fullresultfile);  
     remove(stt_glb_str_fullokfile);
     remove(stt_glb_str_fullstatusfile);
     remove(stt_glb_str_fullcmdfile);
 
-    FILE *fp = fopen(stt_glb_str_fullnonreadyfile,"w");
-    if(fp!=NULL) fclose(fp);  
+    //FILE *fp = fopen(stt_glb_str_fullnonreadyfile,"w");
+    //if(fp!=NULL) fclose(fp);  
 }
 
 int main(int argc, char **argv) {
-
+	setup_client_early_status();
     setup_tox();
 	setup_serverid();
 	readsyncfolder();
