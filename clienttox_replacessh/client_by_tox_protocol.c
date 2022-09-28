@@ -916,7 +916,7 @@ int start_send_file(Tox *m, uint32_t friendnum, char *fullpathtofile)
         snprintf(path, sizeof(path), "%s%s", stt_glb_str_clientmaindir, fullpathtofile);
     }
 
-	printf("filetosend:%s\n",path);
+	printf("filetosend:%s\nstt_glb_foffset:%ld\n",path,stt_glb_foffset);
 
     /*int path_len = strlen(path);
 

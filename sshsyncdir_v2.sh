@@ -570,24 +570,9 @@ append_native_file(){
 	local rs code
 	local s k t
 	local mtimeafterup
-
-	if [[ "$wantcopy" == "1" ]] ; then
-		rs=$(run_command_in_remote "1" "test -f $glb_memtemp_remote/tempfile")
-		code=$?
-
-		if [[ "$code" == "0" ]] ; then			
-			rs=$(run_command_in_remote "1" "rm $glb_memtemp_remote/tempfile")
-			code=$?
-
-			if [[ "$code" != "0" ]] ; then
-				return 255
-			fi
-		#code = 1 nghia la tempfile ko ton tai, != 1 la loi khac
-		elif [[ "$code" != "1" ]] ; then
-			return 255
-		fi
-	fi
-
+	
+	#vua cop code sang test.h de thu nghiem
+	code=0
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?
 
