@@ -180,7 +180,7 @@ run_and_check_client(){
 		
 			elapsed=$(( SECONDS - start_time ))
 			
-			if [[ $elapsed > 30 ]] && [[ ! -f  $nonreadyfile ]] ; then
+			if [[ $elapsed > 10 ]] && [[ ! -f  $nonreadyfile ]] ; then
 				endwhile=1
 			fi
 

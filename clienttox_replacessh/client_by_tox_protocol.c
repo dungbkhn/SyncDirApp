@@ -119,6 +119,7 @@ static char stt_glb_str_serverid[ID_MAX_SIZE]="3B4F6BE71EBA8FAFE8B056D49D6FF52B3
 static int stt_glb_hasserver=0;
 static struct Friend *friendTakingto;
 static int stt_glb_cmd_waittime = 5000;
+static int stt_glb_started_success=0;
 
 // where to save the tox data.
 // if don't want to save, set it to NULL.
@@ -1870,7 +1871,10 @@ void run_iterate(uint32_t msecs){
 	}
 
     stt_glb_ptr_cStatus->offlinetimeelapsed = 0;
-    remove(stt_glb_str_fullnonreadyfile);
+    if(stt_glb_started_success==0){
+		remove(stt_glb_str_fullnonreadyfile);
+		stt_glb_started_success=1;
+	}
 	end_last_communication(2);
 
     //nhan lenh
