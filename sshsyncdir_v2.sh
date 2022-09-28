@@ -80,7 +80,7 @@ run_command_in_remote(){
 	local hashsize=$3
 	local returncode="1"
 	local data
-
+	
 	if [[ -f $resultfile ]] ; then 
 		rm $resultfile
 	fi
