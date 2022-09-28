@@ -1,2 +1,125 @@
-start syncing...Thứ tư, 28 Tháng 9 năm 2022 23:43:10 +07
+start syncing...Thứ tư, 28 Tháng 9 năm 2022 23:44:33 +07
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI;compare /home/dungnt/Backup/Store/MySyncDir/AI /var/res/backup/SyncDir/AI
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI/BackProgation_GradientDescent_Codes;compare /home/dungnt/Backup/Store/MySyncDir/AI/BackProgation_GradientDescent_Codes /var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI/BackProgation_GradientDescent_Codes/Codes;compare /home/dungnt/Backup/Store/MySyncDir/AI/BackProgation_GradientDescent_Codes/Codes /var/res/backup/SyncDir/AI/BackProgation_GradientDescent_Codes/Codes
+generate new outputfile 0
+getback outputfile 0
+--------------------20 files received valid---------------------
+file ko duoc tinh------------20
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+###ok###
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI;compare /home/dungnt/Backup/Store/MySyncDir/AI /var/res/backup/SyncDir/AI
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP;compare /home/dungnt/Backup/Store/MySyncDir/VoIP /var/res/backup/SyncDir/VoIP
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/AllInOne_ClientServeur-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/AllInOne_ClientServeur-master /var/res/backup/SyncDir/VoIP/AllInOne_ClientServeur-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/Android-VoIP--Server_Client--master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/Android-VoIP--Server_Client--master /var/res/backup/SyncDir/VoIP/Android-VoIP--Server_Client--master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/VoIP-AEC-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-AEC-master /var/res/backup/SyncDir/VoIP/VoIP-AEC-master
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/VoIP/VoIP-Java-Project-master;compare /home/dungnt/Backup/Store/MySyncDir/VoIP/VoIP-Java-Project-master /var/res/backup/SyncDir/VoIP/VoIP-Java-Project-master
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+###ok###
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
 ###ok###
