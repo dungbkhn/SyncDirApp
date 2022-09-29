@@ -1,1 +1,14 @@
-start syncing...Thứ năm, 29 Tháng 9 năm 2022 17:59:39 +07
+start syncing...Thứ năm, 29 Tháng 9 năm 2022 20:04:05 +07
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+needcopy:client_by_tox_protocol.c-----0-----null-----0
+--------------------5 files received valid---------------------
+file ko duoc tinh------------4
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir client_by_tox_protocol.c
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-09-28 23:42:54.456602000 +0700" "/var/res/backup/SyncDir/client_by_tox_protocol.c"
+--------------------1 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+###ok###

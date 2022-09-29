@@ -514,19 +514,30 @@ append_native_file(){
 	local wantcopy=$3
 	local mtimebeforeup=$4
 	local rs code
-	local s k t
+	local s k t filesize hashoflocalfile
 	local mtimeafterup	
-	#local hashoflocalfile=$(tail -c 4000000 "$glb_mainmem_local$pathtofile/$filename" | head -c 100000 "$glb_mainmem_local$pathtofile/$filename" | md5sum)
-	#mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"
-	#thu nghiem
+	local truncatesize=1000000
+
+	#get file size
+	
+	filesize=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then fs=\$(stat -c %s ${glb_memtemp_remote}/tempfile); echo \$fs; else echo 0; fi")
+	code=$?	
+	if [[ "$code" != "0" ]] ; then		
+		return 1			
+	fi
+	
+	mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:""$filesize"
+	#s=$(( rs/truncatesize ))
+	#if [[ $s -gt 1 ]] ; then
+	#	hashoflocalfile=$(tail -c 4000000 "$glb_mainmem_local$pathtofile/$filename" | head -c 100000 "$glb_mainmem_local$pathtofile/$filename" | md5sum)
+	#	mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"		
 	#rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(tail -c 4000000 ${glb_memtemp_remote}/tempfile | head -c 100000 ${glb_memtemp_remote}/tempfile | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi fi")
 	#code=$?
-	#mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"
-	
-	#ket thuc thu nghiem
+	#mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"	
+	#fi
 	
 	#xoa tempfile
-	rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/tempfile ] ; then rm $glb_memtemp_remote/tempfile; fi")
+	rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rm ${glb_memtemp_remote}/tempfile; fi")
 	code=$?	
 	if [[ "$code" != "0" ]] ; then		
 		return 1			

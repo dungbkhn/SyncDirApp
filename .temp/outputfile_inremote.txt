@@ -1,12 +1,6 @@
-./119521.xls/1/119521.xls/0/null/0/0
 ./b.deb/1/b.deb/0/null/0/0
-./Makefile/1/Makefile/0/null/0/0
-./md5.c/1/md5.c/0/null/0/0
-./md5.h/1/md5.h/0/null/0/0
+./checksamefile.sh/1/checksamefile.sh/0/null/0/0
 ./ss.sh/1/ss.sh/0/null/0/0
 ./test.c/1/test.c/0/null/0/0
-./listfilesforcmp.txt/4/null/0/null/0/0
-./logclientsynctox.txt/4/null/0/null/0/0
-./mainlog.txt/4/null/0/null/0/0
-./nonreadyfilesdf/4/null/0/null/0/0
+./client_by_tox_protocol.c/4/null/0/null/0/0
 ./
