@@ -516,21 +516,21 @@ append_native_file(){
 	local rs code
 	local s k t
 	local mtimeafterup	
-	local hashoflocalfile=$(tail -c 4000000 "$glb_mainmem_local$pathtofile/$filename" | head -c 100000 "$glb_mainmem_local$pathtofile/$filename" | md5sum)
-	mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"
+	#local hashoflocalfile=$(tail -c 4000000 "$glb_mainmem_local$pathtofile/$filename" | head -c 100000 "$glb_mainmem_local$pathtofile/$filename" | md5sum)
+	#mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"
 	#thu nghiem
-	rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(tail -c 4000000 ${glb_memtemp_remote}/tempfile | head -c 100000 ${glb_memtemp_remote}/tempfile | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi fi")
-	code=$?
-	mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"
+	#rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(tail -c 4000000 ${glb_memtemp_remote}/tempfile | head -c 100000 ${glb_memtemp_remote}/tempfile | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi fi")
+	#code=$?
+	#mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"
 	
 	#ket thuc thu nghiem
 	
 	#xoa tempfile
-	#rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/tempfile ] ; then rm $glb_memtemp_remote/tempfile; fi")
-	#code=$?	
-	#if [[ "$code" != "0" ]] ; then		
-	#	return 1			
-	#fi
+	rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/tempfile ] ; then rm $glb_memtemp_remote/tempfile; fi")
+	code=$?	
+	if [[ "$code" != "0" ]] ; then		
+		return 1			
+	fi
 
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?

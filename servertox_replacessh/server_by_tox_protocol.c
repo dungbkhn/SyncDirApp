@@ -102,6 +102,7 @@ static const char stt_glb_str_tempfile_secondary[] = "tempfilesecondary";
 static const char stt_glb_str_resultfile[] = "resultfile";
 static char stt_glb_str_fullresultfile[LINE_MAX_SIZE];
 static char stt_glb_str_fullpathtofile[LINE_MAX_SIZE];
+static char stt_glb_str_file_in_working[LINE_MAX_SIZE];
 
 static struct Friend *friendTakingto;
 
@@ -627,15 +628,17 @@ int move_file() {
 }
 
 
-int truncate_get_size_tempfile(uint64_t curmtimecmd){
+int truncate_get_size_tempfile(uint64_t curmtimecmd, const uint8_t *m){
 	char tempfilepath[LINE_MAX_SIZE];
 	char cmd[LINE_MAX_SIZE];
+	char filenametemp[LINE_MAX_SIZE];
 	FILE * stream;
 	char buffer[STREAM_MAX_SIZE];
 	size_t n=0;
 
 	snprintf(tempfilepath,LINE_MAX_SIZE,"%s/%s", stt_glb_str_tempdir,stt_glb_str_tempfile);
-
+	snprintf(filenametemp, LINE_MAX_SIZE,"%s", (char*)m);
+	
 	off_t fs = file_size(tempfilepath);
 
 	int ts = fs/TRUNCATE_SIZE;
@@ -643,13 +646,17 @@ int truncate_get_size_tempfile(uint64_t curmtimecmd){
     ts--;
 
 	printf("ts:%d\nstt_glb_ts:%d\nstt_glb_mtimeforcmd:%lld\nstt_glb_mtimeforcmd:%lld\n",ts,stt_glb_ts,stt_glb_mtimeforcmd,curmtimecmd); 
-    if(stt_glb_mtimeforcmd == curmtimecmd){
-        if(ts < stt_glb_ts) ts = stt_glb_ts;
-    }
-    else{
-        stt_glb_mtimeforcmd = curmtimecmd;
-        if(ts < 0) ts = 0;
-        stt_glb_ts = ts;
+	if(strcmp(stt_glb_str_file_in_working,filenametemp)==0){
+		if(stt_glb_mtimeforcmd == curmtimecmd){
+			if(ts < stt_glb_ts) ts = stt_glb_ts;
+		}
+	}	
+    else{		
+			snprintf(stt_glb_str_file_in_working, LINE_MAX_SIZE,"%s", (char*)m);
+			//printf("sosanhhaixau:%d\n",strcmp(stt_glb_str_file_in_working,filenametemp));
+			stt_glb_mtimeforcmd = curmtimecmd;
+			if(ts < 0) ts = 0;
+			stt_glb_ts = ts;		
     }
 
 	snprintf(cmd, LINE_MAX_SIZE, "if [ ! -f %s/%s ] ; then touch %s/%s; echo $?; else truncate --size=%dMB %s/%s; echo $?; fi", stt_glb_str_tempdir, stt_glb_str_tempfile, stt_glb_str_tempdir, stt_glb_str_tempfile, ts, stt_glb_str_tempdir, stt_glb_str_tempfile);
@@ -824,18 +831,17 @@ void respond_send_file(uint32_t friend_num, const uint8_t *message){
     uint64_t mtimecmd = (uint64_t)strtol(str_mtimecmd,NULL,10);
     printf("mtimecmd:%lld\n",mtimecmd);
 
-    if(j==1){
-        int ts = truncate_get_size_tempfile(mtimecmd);
-
-        snprintf(out,LINE_MAX_SIZE,"%d 1 6 %d",stt_glb_msgid,ts);
-        printf("out:%s\n",out);
+    if(j==1){        
 		stt_glb_select_tempfile = 1;
         snprintf(stt_glb_str_fullpathtofile,LINE_MAX_SIZE,"%s%s",stt_glb_str_maindir,message + i + 5);
+        int ts = truncate_get_size_tempfile(mtimecmd,message + i + 5);
+        snprintf(out,LINE_MAX_SIZE,"%d 1 6 %d",stt_glb_msgid,ts);
+        printf("out1:%s\n",out);
     } else {
-        snprintf(out,LINE_MAX_SIZE,"%d 1 6 0",stt_glb_msgid);
-        printf("out:%s\n",out);
 		stt_glb_select_tempfile = 0;
         snprintf(stt_glb_str_fullpathtofile,LINE_MAX_SIZE,"%s%s",stt_glb_str_tempdir,message + i + 5);
+        snprintf(out,LINE_MAX_SIZE,"%d 1 6 0",stt_glb_msgid);
+        printf("out2:%s\n",out);		
     }
 
     printf("filetosave:%s\n",stt_glb_str_fullpathtofile);

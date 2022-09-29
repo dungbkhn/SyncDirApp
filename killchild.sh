@@ -2,37 +2,49 @@
 
 shopt -s dotglob
 shopt -s nullglob
-
+loop=0
 while true; do
-
-	rs=$(ps -aux | grep 'sshsyncdir_v2.sh' | wc -l)
-
-	echo $rs
-
-	if [ $rs -gt 1 ] ; then
-		rs=$(ps -aux | grep 'sshsyncdir_v2.sh' | head -n 1 | awk '{ print $2 }')
-
-		echo "will kill ""$rs"
-	
-		kill "$rs"
-	else
+	loop=$(( $loop + 1 ))
+	if [[ $loop -eq 3 ]] ; then
 		break
-	fi
-done
-
-while true; do
-	rs=$(ps -aux | grep 'client_by_tox_protocol' | wc -l)
-
-	echo $rs
-
-	if [ $rs -gt 1 ] ; then
-		rs=$(ps -aux | grep 'client_by_tox_protocol' | head -n 1 | awk '{ print $2 }')
-
-		echo "will kill ""$rs"
-	
-		kill "$rs"
-
 	else
-		break
+		sleep 0.1
 	fi
+	
+	while true; do
+
+		num=$(ps -aux | grep 'sshsyncdir_v2.sh' | wc -l)
+
+		echo $num
+
+		if [ $num -gt 1 ] ; then
+			rs=$(ps -aux | grep 'sshsyncdir_v2.sh' | head -n $num | awk '{ print $2 }')
+
+			echo "will kill ""$rs"
+		
+			kill $rs
+			
+			sleep 0.1
+		else
+			break
+		fi
+	done
+
+	while true; do
+		num=$(ps -aux | grep 'client_by_tox_protocol' | wc -l)
+
+		echo $num
+
+		if [ $num -gt 1 ] ; then
+			rs=$(ps -aux | grep 'client_by_tox_protocol' | head -n $num | awk '{ print $2 }')
+
+			echo "will kill ""$rs"
+		
+			kill $rs
+
+			sleep 0.1
+		else
+			break
+		fi
+	done
 done
