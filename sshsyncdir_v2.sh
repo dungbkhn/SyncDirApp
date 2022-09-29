@@ -524,11 +524,12 @@ append_native_file(){
 	
 	#ket thuc thu nghiem
 	
-	rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/tempfile ] ; then rm $glb_memtemp_remote/tempfile; fi")
-	code=$?	
-	if [[ "$code" != "0" ]] ; then		
-		return 1			
-	fi
+	#xoa tempfile
+	#rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/tempfile ] ; then rm $glb_memtemp_remote/tempfile; fi")
+	#code=$?	
+	#if [[ "$code" != "0" ]] ; then		
+	#	return 1			
+	#fi
 
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?
