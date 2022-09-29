@@ -1,3 +1,1 @@
-./AI/5/null
-./VoIP/5/null
 ./

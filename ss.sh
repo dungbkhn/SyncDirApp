@@ -517,19 +517,19 @@ append_native_file(){
 	local s k t
 	local mtimeafterup	
 				
-	#thu nghiem
-	rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/comparelistfile_remote.sh ] ; then rs=\$(tail -c 8192 $glb_memtemp_remote/comparelistfile_remote.sh | md5sum); if [ \"\$rs\" = \"332406a3b8efeb97c3cdb0bd210d2e14  -\" ] ; then echo bang; else echo khongbang; fi fi")
+	rs=$(run_command_in_remote "1" "if [[ -f $glb_memtemp_remote/tempfile ]] ; then rm $glb_memtemp_remote/tempfile; fi")
 	code=$?
-	mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"
+	
+	if [[ "$code" != "0" ]] ; then		
+		return 255			
+	fi
+	
+	#thu nghiem
+	
+	
 	
 	#ket thuc thu nghiem
 	
-	rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/tempfile ] ; then rm $glb_memtemp_remote/tempfile; fi")
-	code=$?	
-	if [[ "$code" != "0" ]] ; then		
-		return 1			
-	fi
-
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?
 
@@ -718,7 +718,7 @@ sync_dir(){
 						mech "cannotcp   ""$relativepath""/""${name[$i]}"" view errorlog for detail"
 						break
 					elif [[ "$code" == "254" ]] ; then
-						mech "filecp vua bi thay doi   ""$relativepath""/""${name[$i]}"
+						glb_befDirHash="none"
 						break
 					else
 						break
