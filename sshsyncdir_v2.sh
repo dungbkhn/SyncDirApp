@@ -516,9 +516,10 @@ append_native_file(){
 	local rs code
 	local s k t
 	local mtimeafterup	
-				
+	local hashoflocalfile=$(tail -c 4000000 "$glb_mainmem_local$pathtofile/$filename" | head -c 100000 "$glb_mainmem_local$pathtofile/$filename" | md5sum)
+	mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"
 	#thu nghiem
-	rs=$(run_command_in_remote "1" "if [ -f $glb_memtemp_remote/comparelistfile_remote.sh ] ; then rs=\$(tail -c 8192 $glb_memtemp_remote/comparelistfile_remote.sh | md5sum); if [ \"\$rs\" = \"332406a3b8efeb97c3cdb0bd210d2e14  -\" ] ; then echo bang; else echo khongbang; fi fi")
+	rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(tail -c 4000000 ${glb_memtemp_remote}/tempfile | head -c 100000 ${glb_memtemp_remote}/tempfile | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi fi")
 	code=$?
 	mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"
 	

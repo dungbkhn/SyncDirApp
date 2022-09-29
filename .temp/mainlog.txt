@@ -1,14 +1,14 @@
-start syncing...Thứ năm, 29 Tháng 9 năm 2022 09:30:11 +07
+start syncing...Thứ năm, 29 Tháng 9 năm 2022 12:23:05 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:119521.xls-----0-----null-----0
---------------------2 files received valid---------------------
+needcopy:test.c-----0-----null-----0
+--------------------3 files received valid---------------------
 file ko duoc tinh------------2
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir 119521.xls
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir test.c
+^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^eec768c38c76c85407a10af53da9b5ce  -
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^bang
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^sdfsdsdfsdf^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-t:touch -d "2022-09-19 16:17:18.123378000 +0700" "/var/res/backup/SyncDir/119521.xls"
+t:touch -d "2022-09-29 09:27:50.000000000 +0700" "/var/res/backup/SyncDir/test.c"
 --------------------1 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
