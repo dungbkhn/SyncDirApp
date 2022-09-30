@@ -1,4 +1,4 @@
-start syncing...Thứ sáu, 30 Tháng 9 năm 2022 08:55:43 +07
+start syncing...Thứ sáu, 30 Tháng 9 năm 2022 09:08:22 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
@@ -10,12 +10,14 @@ file ko duoc tinh------------2
 ^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^d8845406f96b4c6f8d6a915bc8d854ed  -
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^1+0 records in
 1+0 records out
-1000000 bytes (1.0 MB, 977 KiB) copied, 0.0223286 s, 44.8 MB/s
+1000000 bytes (1.0 MB, 977 KiB) copied, 0.0117731 s, 84.9 MB/s
 bang
 ^^^^^^^^^^t:bang
 ^^^^^^^^^^bang
 ^^^^^^^^^^k:1
+t:touch -d "2022-09-27 22:44:51.953303944 +0700" "/var/res/backup/SyncDir/b.deb"
 --------------------1 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
+###ok###
 ###ok###

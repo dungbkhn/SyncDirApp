@@ -534,25 +534,19 @@ append_native_file(){
 	s=$(( filesize/truncatesize ))
 	if [[ $s -gt 1 ]] ; then
 		s=$(( $s - 1 ))
-		hashoflocalfile=$(dd if="${glb_mainmem_local}${pathtofile}/${filename}" bs=1MB count=1 skip=${s} | md5sum)
-		mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"		
+		hashoflocalfile=$(dd if="${glb_mainmem_local}${pathtofile}/${filename}" bs=1MB count=1 skip=${s} | md5sum)	
 		rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(dd if=${glb_memtemp_remote}/tempfile bs=1MB count=1 skip=${s} | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi; else echo notfound; fi")
 		code=$?
 		if [[ "$code" != "0" ]] ; then		
 			return 1			
 		fi
-		mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"	
 		t=$(echo "$rs" | tail -n 1)
-		mech "^^^^^^^^^^t:""$t"
 		if [[ "$t" == "bang"  ]] ; then
 			k=1
 			mech "^^^^^^^^^^bang"
 		fi		
 	fi
 	
-	#test
-	mech "^^^^^^^^^^k:""$k"
-	#end test
 	
 	#xoa tempfile
 	if [[ $k -eq 0 ]] ; then
