@@ -518,32 +518,52 @@ append_native_file(){
 	local mtimeafterup	
 	local truncatesize=1000000
 
-	#get file size
-	
+	#get filesize	
 	filesize=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then fs=\$(stat -c %s ${glb_memtemp_remote}/tempfile); echo \$fs; else echo 0; fi")
 	code=$?	
 	if [[ "$code" != "0" ]] ; then		
 		return 1			
 	fi
 	
+	if [[ -z "$filesize" ]] ; then
+		return 1
+	fi
+	
 	mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:""$filesize"
+	k=0
 	s=$(( filesize/truncatesize ))
 	if [[ $s -gt 1 ]] ; then
 		s=$(( $s - 1 ))
 		hashoflocalfile=$(dd if="${glb_mainmem_local}${pathtofile}/${filename}" bs=1MB count=1 skip=${s} | md5sum)
 		mech "^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$hashoflocalfile"		
-		rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(dd if=${glb_memtemp_remote}/tempfile bs=1MB count=1 skip=${s} | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi fi")
+		rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rs=\$(dd if=${glb_memtemp_remote}/tempfile bs=1MB count=1 skip=${s} | md5sum); if [ \"\$rs\" = \"${hashoflocalfile}\" ] ; then echo bang; else echo khongbang; fi; else echo notfound; fi")
 		code=$?
+		if [[ "$code" != "0" ]] ; then		
+			return 1			
+		fi
 		mech "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^""$rs"	
+		t=$(echo "$rs" | tail -n 1)
+		mech "^^^^^^^^^^t:""$t"
+		if [[ "$t" == "bang"  ]] ; then
+			k=1
+			mech "^^^^^^^^^^bang"
+		fi		
 	fi
 	
+	#test
+	mech "^^^^^^^^^^k:""$k"
+	exit 0
+	#end test
+	
 	#xoa tempfile
-	rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rm ${glb_memtemp_remote}/tempfile; fi")
-	code=$?	
-	if [[ "$code" != "0" ]] ; then		
-		return 1			
+	if [[ $k -eq 0 ]] ; then
+		rs=$(run_command_in_remote "1" "if [ -f ${glb_memtemp_remote}/tempfile ] ; then rm ${glb_memtemp_remote}/tempfile; fi")
+		code=$?	
+		if [[ "$code" != "0" ]] ; then		
+			return 1			
+		fi
 	fi
-
+	
 	rs=$(run_command_in_remote "3" "//x//${pathtofile}/${filename}")
 	code=$?
 
