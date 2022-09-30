@@ -552,7 +552,6 @@ append_native_file(){
 	
 	#test
 	mech "^^^^^^^^^^k:""$k"
-	exit 0
 	#end test
 	
 	#xoa tempfile
