@@ -611,13 +611,16 @@ append_file_to_remote() {
 		if [[ "$code" != "0" ]] ; then		
 			return 1			
 		fi
-		rs=$(run_command_in_remote "1" "touch \"${glb_mainmem_remote}${pathtofile}/${filename}.beingappended\"")
+		rs=$(run_command_in_remote "1" "touch \"${glb_mainmem_remote}${pathtofile}/${filename}.tMpZ.in.being.appended\"")
 		code=$?
 		if [[ "$code" != "0" ]] ; then		
 			return 1			
 		fi
 		append_native_file "$pathtofile" "$filename" $regardlesstempfile "$mtime"
 		code="$?"
+		if [[ "$code" == "0" ]] ; then		
+				rs=$(run_command_in_remote "1" "rm \"${glb_mainmem_remote}${pathtofile}/${filename}.tMpZ.in.being.appended\"")
+		fi
 		return "$code"
 	fi
 }
