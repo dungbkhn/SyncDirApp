@@ -1,15 +1,23 @@
-start syncing...Thứ ba, 04 Tháng 10 năm 2022 11:28:43 +07
+start syncing...Thứ ba, 04 Tháng 10 năm 2022 13:11:59 +07
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/aas.sh
+check filename:/home/dungnt/Backup/Store/MySyncDir/b.deb
+check filename:/home/dungnt/Backup/Store/MySyncDir/ss.sh
+check filename:/home/dungnt/Backup/Store/MySyncDir/test.c
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/asd
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/asd/b.deb
+check filename:/home/dungnt/Backup/Store/MySyncDir/asd/ss.sh
+check filename:/home/dungnt/Backup/Store/MySyncDir/asd/test.c
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needappend:b.deb-----30000000-----6d3f16c24c003ff605b38a0929e51881-----1664857711
 --------------------4 files received valid---------------------
-file ko duoc tinh------------3
-->append:mtimelc:1664293491 mtime:1664857711-/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir b.deb 30000000
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:30000000
-^^^^^^^^^^bang
-t:touch -d "2022-09-27 22:44:51.953303944 +0700" "/var/res/backup/SyncDir/b.deb"
---------------------1 files can append hoac copy ---------------------
+file ko duoc tinh------------4
+--------------------0 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
 relativepath:/asd;compare /home/dungnt/Backup/Store/MySyncDir/asd /var/res/backup/SyncDir/asd

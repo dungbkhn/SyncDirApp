@@ -12,6 +12,7 @@ declare -a headhash
 declare -a mtime
 declare -a size
 
+rm "$dir"/*.tMpZ.in.being.appended
 
 count=0
 for pathname in "$dir"/* ; do
