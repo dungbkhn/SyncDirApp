@@ -1,4 +1,4 @@
-./ss.sh/1/ss.sh/0/null/0/0
-./test.c/1/test.c/0/null/0/0
 ./b.deb/4/null/0/null/0/0
+./ss.sh/4/null/0/null/0/0
+./test.c/4/null/0/null/0/0
 ./

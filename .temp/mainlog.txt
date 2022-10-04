@@ -1,23 +1,30 @@
-start syncing...Thứ sáu, 30 Tháng 9 năm 2022 09:08:22 +07
+start syncing...Thứ ba, 04 Tháng 10 năm 2022 10:00:20 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:b.deb-----0-----null-----0
 --------------------3 files received valid---------------------
-file ko duoc tinh------------2
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir b.deb
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:182000000
-^^^^^^^^^^^^hashlocalfile^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^d8845406f96b4c6f8d6a915bc8d854ed  -
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^1+0 records in
-1+0 records out
-1000000 bytes (1.0 MB, 977 KiB) copied, 0.0117731 s, 84.9 MB/s
-bang
-^^^^^^^^^^t:bang
-^^^^^^^^^^bang
-^^^^^^^^^^k:1
-t:touch -d "2022-09-27 22:44:51.953303944 +0700" "/var/res/backup/SyncDir/b.deb"
---------------------1 files can append hoac copy ---------------------
+file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
-###ok###
+relativepath:/asd;compare /home/dungnt/Backup/Store/MySyncDir/asd /var/res/backup/SyncDir/asd
+generate new outputfile 0
+getback outputfile 0
+needcopy:b.deb-----0-----null-----0
+needcopy:ss.sh-----0-----null-----0
+needcopy:test.c-----0-----null-----0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------0
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir b.deb
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-09-27 22:44:51.953303000 +0700" "/var/res/backup/SyncDir/asd/b.deb"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ss.sh
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-09-29 07:43:55.104023000 +0700" "/var/res/backup/SyncDir/asd/ss.sh"
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir test.c
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-09-29 09:27:50.000000000 +0700" "/var/res/backup/SyncDir/asd/test.c"
+--------------------3 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
 ###ok###

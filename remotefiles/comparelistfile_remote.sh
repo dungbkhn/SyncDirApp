@@ -102,10 +102,7 @@ if [[ -f "$memtemp""/""$param1" ]] ; then
 					hassamefile_remote[$j]=1
 					if [[ "${mtime[$i]}" == "${mtime_remote[$j]}" ]] && [[ ${filesize[$i]} -eq ${filesize_remote[$j]} ]] && [[ "${md5hash[$i]}" == "${md5hash_remote[$j]}" ]] ; then
 						printf "./%s/1/%s/0/null/0/0\n" "${names[$i]}" "${names_remote[$j]}" >> "$memtemp""/""$param3"
-					elif [[ ${filesize[$i]} -eq ${filesize_remote[$j]} ]] && [[ "${md5hash[$i]}" != "${md5hash_remote[$j]}" ]] ; then
-						rm "$param2""/""${names_remote[$j]}"
-						printf "./%s/5/null/0/null/0/0\n" "${names[$i]}" >> "$memtemp""/""$param3"
-					elif [[ ${filesize[$i]} -gt ${filesize_remote[$j]} ]] && [[ "${md5hash[$i]}" != "${md5hash_remote[$j]}" ]] ; then
+					elif [[ "${md5hash[$i]}" != "${md5hash_remote[$j]}" ]] ; then
 						rm "$param2""/""${names_remote[$j]}"
 						printf "./%s/5/null/0/null/0/0\n" "${names[$i]}" >> "$memtemp""/""$param3"
 					elif [[ ${filesize[$i]} -lt ${filesize_remote[$j]} ]] ; then
