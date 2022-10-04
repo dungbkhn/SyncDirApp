@@ -593,6 +593,35 @@ append_native_file(){
 	fi
 }
 
+append_file_to_remote() {
+	local pathtofile=$1
+	local filename=$2
+	local regardlesstempfile=$3
+	local mtime
+	local code rs
+	
+	mtime=$(stat "${glb_mainmem_local}${pathtofile}/${filename}" -c %Y)
+	code=$?
+	if [[ $code -ne 0 ]] ; then
+		mech "cannotappend   ""file ""${glb_mainmem_local}${pathtofile}/${filename}""not found --> mtime not found"
+		return 255		
+	else
+		rs=$(run_command_in_remote "1" "mv \"${glb_mainmem_remote}${pathtofile}/${filename}\" ${glb_memtemp_remote}/tempfile")
+		code=$?
+		if [[ "$code" != "0" ]] ; then		
+			return 1			
+		fi
+		rs=$(run_command_in_remote "1" "touch \"${glb_mainmem_remote}${pathtofile}/${filename}.beingappended\"")
+		code=$?
+		if [[ "$code" != "0" ]] ; then		
+			return 1			
+		fi
+		append_native_file "$pathtofile" "$filename" $regardlesstempfile "$mtime"
+		code="$?"
+		return "$code"
+	fi
+}
+
 #----------------------------------------COPY---------------------------------------------
 
 copy_file_to_remote() {
@@ -605,7 +634,7 @@ copy_file_to_remote() {
 	mtime=$(stat "${glb_mainmem_local}${pathtofile}/${filename}" -c %Y)
 	code=$?
 	if [[ $code -ne 0 ]] ; then
-		mech 'file not found --> mtime not found'
+		mech "cannotcp   ""file ""${glb_mainmem_local}${pathtofile}/${filename}""not found --> mtime not found"
 		return 255		
 	else
 		append_native_file "$pathtofile" "$filename" $regardlesstempfile "$mtime"
@@ -731,26 +760,43 @@ sync_dir(){
 				if [[ "${apporcop[$i]}" == "1" ]] ; then
 					#file local da bi modify (ko ro vi tri bi modify) ---> append with hash
 					mech "->append:""mtimelc:""${mtime_local[$i]}"" mtime:""${mtime[$i]}""-""$param1"" ""$param2"" ""${name[$i]}"" ""${size[$i]}"					
+					while true; do
+						rs=$(append_file_to_remote "$relativepath" "${name[$i]}" 0)
+						code="$?"
+						
+						if [[ "$code" == "1" ]] ; then
+							#try to stop sync
+							echo "cannotappend   ""$relativepath""/""${name[$i]}" >> "$errorlogfile"
+							mech "cannotappend   ""$relativepath""/""${name[$i]}"" view errorlog for detail"
+							break
+						elif [[ "$code" == "254" ]] ; then
+							mech "cannotappend   ""filecp vua bi thay doi   ""$relativepath""/""${name[$i]}"
+							break
+						else
+							break
+						fi
+					done
 				else
 					mech "->copy:""$param1"" ""$param2"" ""${name[$i]}"
+					while true; do
+						rs=$(copy_file_to_remote "$relativepath" "${name[$i]}" 0)
+						code="$?"
+						
+						if [[ "$code" == "1" ]] ; then
+							#try to stop sync
+							echo "cannotcp   ""$relativepath""/""${name[$i]}" >> "$errorlogfile"
+							mech "cannotcp   ""$relativepath""/""${name[$i]}"" view errorlog for detail"
+							break
+						elif [[ "$code" == "254" ]] ; then
+							mech "cannotcp   ""filecp vua bi thay doi   ""$relativepath""/""${name[$i]}"
+							break
+						else
+							break
+						fi
+					done
 				fi
 				
-				while true; do
-					rs=$(copy_file_to_remote "$relativepath" "${name[$i]}" 0)
-					code="$?"
-					
-					if [[ "$code" == "1" ]] ; then
-						#try to stop sync
-						echo "cannotcp   ""$relativepath""/""${name[$i]}" >> "$errorlogfile"
-						mech "cannotcp   ""$relativepath""/""${name[$i]}"" view errorlog for detail"
-						break
-					elif [[ "$code" == "254" ]] ; then
-						mech "filecp vua bi thay doi   ""$relativepath""/""${name[$i]}"
-						break
-					else
-						break
-					fi
-				done
+				
 			#neu ko tim thay
 			else
 				mech '**********************************file not found'
