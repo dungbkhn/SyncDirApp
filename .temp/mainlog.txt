@@ -1,4 +1,79 @@
-start syncing...Thứ năm, 06 Tháng 10 năm 2022 15:46:09 +07
+start syncing...Thứ năm, 06 Tháng 10 năm 2022 16:08:47 +07
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/aas.sh
+down outputfile
+t:touch -d "2022-10-06 16:09:19.650827576 +0700" "/var/res/backup/SyncDir/aas.sh"
+check filename:/home/dungnt/Backup/Store/MySyncDir/b.deb
+down outputfile
+t:touch -d "2022-10-06 16:10:15.202547265 +0700" "/var/res/backup/SyncDir/b.deb"
+check filename:/home/dungnt/Backup/Store/MySyncDir/nhap.txt
+down outputfile
+t:touch -d "2022-10-06 16:10:16.622540050 +0700" "/var/res/backup/SyncDir/nhap.txt"
+check filename:/home/dungnt/Backup/Store/MySyncDir/.profile
+down outputfile
+t:touch -d "2022-10-06 16:10:18.742529274 +0700" "/var/res/backup/SyncDir/.profile"
+check filename:/home/dungnt/Backup/Store/MySyncDir/.python_history
+down outputfile
+t:touch -d "2022-10-06 16:10:20.718519226 +0700" "/var/res/backup/SyncDir/.python_history"
+check filename:/home/dungnt/Backup/Store/MySyncDir/ss.sh
+down outputfile
+t:touch -d "2022-10-06 16:10:22.790508685 +0700" "/var/res/backup/SyncDir/ss.sh"
+check filename:/home/dungnt/Backup/Store/MySyncDir/.sudo_as_admin_successful
+down outputfile
+t:touch -d "2022-10-06 16:10:24.702498954 +0700" "/var/res/backup/SyncDir/.sudo_as_admin_successful"
+check filename:/home/dungnt/Backup/Store/MySyncDir/test.c
+down outputfile
+t:touch -d "2022-10-06 16:10:26.942487547 +0700" "/var/res/backup/SyncDir/test.c"
+check filename:/home/dungnt/Backup/Store/MySyncDir/.xinputrc
+down outputfile
+t:touch -d "2022-10-06 16:10:28.910477522 +0700" "/var/res/backup/SyncDir/.xinputrc"
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/#%$^%& ' (' )45%^$&
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$&/nhap.txt
+down outputfile
+t:touch -d "2022-10-06 16:10:32.994456703 +0700" "/var/res/backup/SyncDir/#%$^%& ' (' )45%^$&/nhap.txt"
+check filename:/home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$&/ss (copy).sh
+down outputfile
+t:touch -d "2022-10-06 16:10:35.114445888 +0700" "/var/res/backup/SyncDir/#%$^%& ' (' )45%^$&/ss (copy).sh"
+check filename:/home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$&/ss.sh
+down outputfile
+t:touch -d "2022-10-06 16:10:37.134435578 +0700" "/var/res/backup/SyncDir/#%$^%& ' (' )45%^$&/ss.sh"
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/t
+generate outputfile:0
+down outputfile:0
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/t/test
+generate outputfile:0
+down outputfile:0
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/t/test/asd
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/t/test/asd/ss.sh
+down outputfile
+t:touch -d "2022-10-06 16:10:45.366393521 +0700" "/var/res/backup/SyncDir/t/test/asd/ss.sh"
+check filename:/home/dungnt/Backup/Store/MySyncDir/t/test/asd/test.c
+down outputfile
+t:touch -d "2022-10-06 16:10:47.490382657 +0700" "/var/res/backup/SyncDir/t/test/asd/test.c"
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/t/test/he
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/t/test/he/comparelistdir_remote_old.sh
+down outputfile
+t:touch -d "2022-10-06 16:10:51.458362349 +0700" "/var/res/backup/SyncDir/t/test/he/comparelistdir_remote_old.sh"
+check filename:/home/dungnt/Backup/Store/MySyncDir/t/test/he/comparelistdir_remote.sh
+down outputfile
+t:touch -d "2022-10-06 16:10:53.494351922 +0700" "/var/res/backup/SyncDir/t/test/he/comparelistdir_remote.sh"
+check filename:/home/dungnt/Backup/Store/MySyncDir/t/test/he/comparelistfile_remote.sh
+down outputfile
+t:touch -d "2022-10-06 16:10:55.522341532 +0700" "/var/res/backup/SyncDir/t/test/he/comparelistfile_remote.sh"
+beginwith/home/dungnt/Backup/Store/MySyncDir----/var/res/backup/SyncDir----/t/test/VPN keys
+generate outputfile:0
+down outputfile:0
+check filename:/home/dungnt/Backup/Store/MySyncDir/t/test/VPN keys/vpngate_public-vpn-173.opengw.net_tcp_443.ovpn
+down outputfile
+t:touch -d "2022-10-06 16:10:59.674320246 +0700" "/var/res/backup/SyncDir/t/test/VPN keys/vpngate_public-vpn-173.opengw.net_tcp_443.ovpn"
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
@@ -10,8 +85,8 @@ getback outputdir 0
 relativepath:/#%$^%& ' (' )45%^$&;compare /home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$& /var/res/backup/SyncDir/#%$^%& ' (' )45%^$&
 generate new outputfile 0
 getback outputfile 0
---------------------2 files received valid---------------------
-file ko duoc tinh------------2
+--------------------3 files received valid---------------------
+file ko duoc tinh------------3
 --------------------0 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
@@ -46,35 +121,104 @@ file ko duoc tinh------------1
 generate new outputdir 0
 getback outputdir 0
 time_lastrun:3
-###ok###
-time_lastrun:3
-###ok###
-time_lastrun:3
-###ok###
-time_lastrun:3
-rerun with newpath /#%$^%& ' (' )45%^$&
+rerun with newpath 
 rerun with newpath: ok
-relativepath:/#%$^%& ' (' )45%^$&;compare /home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$& /var/res/backup/SyncDir/#%$^%& ' (' )45%^$&
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
-needcopy:ss (copy).sh-----0-----null-----0
---------------------3 files received valid---------------------
-file ko duoc tinh------------2
-->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir ss (copy).sh
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
-t:touch -d "2022-10-04 13:04:40.365487000 +0700" "/var/res/backup/SyncDir/#%$^%& ' (' )45%^$&/ss (copy).sh"
---------------------1 files can append hoac copy ---------------------
+--------------------9 files received valid---------------------
+file ko duoc tinh------------9
+--------------------0 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
-###ok###
-time_lastrun:3
-rerun with newpath /#%$^%& ' (' )45%^$&
-rerun with newpath: ok
 relativepath:/#%$^%& ' (' )45%^$&;compare /home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$& /var/res/backup/SyncDir/#%$^%& ' (' )45%^$&
 generate new outputfile 0
 getback outputfile 0
 --------------------3 files received valid---------------------
 file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t;compare /home/dungnt/Backup/Store/MySyncDir/t /var/res/backup/SyncDir/t
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test;compare /home/dungnt/Backup/Store/MySyncDir/t/test /var/res/backup/SyncDir/t/test
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/asd;compare /home/dungnt/Backup/Store/MySyncDir/t/test/asd /var/res/backup/SyncDir/t/test/asd
+generate new outputfile 0
+getback outputfile 0
+--------------------2 files received valid---------------------
+file ko duoc tinh------------2
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/he;compare /home/dungnt/Backup/Store/MySyncDir/t/test/he /var/res/backup/SyncDir/t/test/he
+generate new outputfile 0
+getback outputfile 0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/VPN keys;compare /home/dungnt/Backup/Store/MySyncDir/t/test/VPN keys /var/res/backup/SyncDir/t/test/VPN keys
+generate new outputfile 0
+getback outputfile 0
+--------------------1 files received valid---------------------
+file ko duoc tinh------------1
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+rerun with newpath /t/test
+rerun with newpath: ok
+relativepath:/t/test;compare /home/dungnt/Backup/Store/MySyncDir/t/test /var/res/backup/SyncDir/t/test
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/asd;compare /home/dungnt/Backup/Store/MySyncDir/t/test/asd /var/res/backup/SyncDir/t/test/asd
+generate new outputfile 0
+getback outputfile 0
+needcopy:test (copy).c-----0-----null-----0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------2
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir test (copy).c
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-10-06 16:10:47.490382000 +0700" "/var/res/backup/SyncDir/t/test/asd/test (copy).c"
+--------------------1 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/he;compare /home/dungnt/Backup/Store/MySyncDir/t/test/he /var/res/backup/SyncDir/t/test/he
+generate new outputfile 0
+getback outputfile 0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/VPN keys;compare /home/dungnt/Backup/Store/MySyncDir/t/test/VPN keys /var/res/backup/SyncDir/t/test/VPN keys
+generate new outputfile 0
+getback outputfile 0
+needcopy:vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn-----0-----null-----0
+--------------------2 files received valid---------------------
+file ko duoc tinh------------1
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-10-06 16:10:59.674320000 +0700" "/var/res/backup/SyncDir/t/test/VPN keys/vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn"
+--------------------1 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+###ok###
+time_lastrun:3
+rerun with newpath /t/test/VPN keys
+rerun with newpath: ok
+relativepath:/t/test/VPN keys;compare /home/dungnt/Backup/Store/MySyncDir/t/test/VPN keys /var/res/backup/SyncDir/t/test/VPN keys
+generate new outputfile 0
+getback outputfile 0
+--------------------2 files received valid---------------------
+file ko duoc tinh------------2
 --------------------0 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0

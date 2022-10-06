@@ -1,4 +1,3 @@
-./nhap.txt/1/nhap.txt/0/null/0/0
-./ss (copy).sh/1/ss (copy).sh/0/null/0/0
-./ss.sh/1/ss.sh/0/null/0/0
+./vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn/1/vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn/0/null/0/0
+./vpngate_public-vpn-173.opengw.net_tcp_443.ovpn/1/vpngate_public-vpn-173.opengw.net_tcp_443.ovpn/0/null/0/0
 ./
