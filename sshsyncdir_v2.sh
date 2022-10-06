@@ -33,6 +33,11 @@ errorlogfile="$glb_memtemp_local"/errorlog.txt
 hashlogfile="$glb_memtemp_local"/hashlog.txt
 testhashlogfile="$glb_memtemp_local"/testhashlog.txt
 
+glb_file_track_dir="$glb_memtemp_local"/trackdirlog.txt
+glb_file_track_file="$glb_memtemp_local"/trackfilelog.txt
+	
+glb_newpath_for_rerun=""
+glb_rerun_with_newpath=0
 glb_befDirHash=""
 glb_afDirHash=""
 glb_hashcount=0
@@ -840,10 +845,10 @@ sync_dir(){
 			# "path:""$param1""$relativepath"/"${dirname[$i]}"
 			# "$relativepath"/"${dirname[$i]}"
 
-			glb_befDirHash=$(stat "$param1""$relativepath""/""${dirname[$i]}" -c '%Y')
-			echo "-----------------------syncdir:   ""$param1""$relativepath""/""${dirname[$i]}"
-			echo "$relativepath"/"${dirname[$i]}" >> "$hashlogfile"
-			echo "$glb_befDirHash" >> "$hashlogfile"
+			#glb_befDirHash=$(stat "$param1""$relativepath""/""${dirname[$i]}" -c '%Y')
+			#echo "-----------------------syncdir:   ""$param1""$relativepath""/""${dirname[$i]}"
+			#echo "$relativepath"/"${dirname[$i]}" >> "$hashlogfile"
+			#echo "$glb_befDirHash" >> "$hashlogfile"
 			
 			sync_dir "$relativepath"/"${dirname[$i]}"
 			code="$?"
@@ -858,29 +863,121 @@ sync_dir(){
 }
 
 #-------------------------------------MAIN-----------------------------------------
-: '
-test_recursive(){
-	local path=$1
-	local element=$(basename "$path")
-	local relativepath
-	local level=$3	
+checkmodifydir(){
+	# declare array
+	declare -a strarr_main
+	declare -a strarr_cur
+	
+	# set comma as delimiter
+	local IFS='/'
+	# local param
+	local len_main line fs1 fs2 i j passdir passfile
+	local folder=$1
+	local curdir=$(pwd)
+	local time_lastrun=$2
+	
+	cd "$folder"
+	mech "time_lastrun:""$time_lastrun"
+	find . -type d -mmin -$time_lastrun > "$glb_file_track_dir"
+	find . -type f -mmin -$time_lastrun > "$glb_file_track_file"
+	cd "$curdir"
+	
+	#for dirs
+	fs1=$(stat -c %s "$glb_file_track_dir")
+	
+	#init
+	read -a strarr_main <<< ""
+	len_main=0
+	passdir=0
+	
+	if [[ ! -f  "$glb_file_track_dir" ]] ; then
+		exit 2
+	fi
+	
+	if [[ $fs1 -eq 0 ]] ; then
+		passdir=1
+	fi
+	
+	if [[ $passdir -eq 0 ]] ; then
+		while read -r line; 
+		do 
+			read -a strarr_cur <<< "$line"
+			
+			if [[ $len_main -gt 0 ]] ; then
+				j=0
+				for i in "${!strarr_cur[@]}" ; do	
+					if [[ $j -lt $len_main ]] && [[ "${strarr_cur[$i]}" == "${strarr_main[$j]}" ]] ; then
+						j=$(( $j + 1 ))
+					else
+						break;
+					fi
+				done
+				len_main=$j
+			else
+				unset strarr_main
+				read -a strarr_main <<< "$line"
+				len_main=${#strarr_main[@]}
+			fi
+			
+			unset strarr_cur		
+		done < "$glb_file_track_dir"
+	fi
+	
+	#for files
+	fs2=$(stat -c %s "$glb_file_track_file")
 
-	if [ $level -eq 0 ] ; then
-		relativepath=""
-	else
-		relativepath="$2""/""$element"
+	if [[ ! -f  "$glb_file_track_file" ]] ; then
+		exit 2
+	fi
+	
+	if [[ $fs2 -eq 0 ]] ; then
+		passfile=1
 	fi
 
-	level=$(($level + 1))
-	# hien thi $relativepath
-
-	for d in $path/* ; do
-		if [ -d "$d" ] ; then
-			test_recursive "$d" "$relativepath" $level
+	if [[ $passfile -eq 0 ]] ; then
+		while read -r line; 
+		do 
+			read -a strarr_cur <<< "$line"
+			
+			if [[ $len_main -gt 0 ]] ; then
+				j=0
+				for i in "${!strarr_cur[@]}" ; do	
+					if [[ $j -lt $len_main ]] && [[ "${strarr_cur[$i]}" == "${strarr_main[$j]}" ]] ; then
+						j=$(( $j + 1 ))
+					else
+						break;
+					fi
+				done
+				len_main=$j
+			else
+				unset strarr_main
+				read -a strarr_main <<< "$line"
+				len_main=${#strarr_main[@]}
+			fi
+			
+			unset strarr_cur		
+		done < "$glb_file_track_file"
+	fi
+	
+	if [[ $passdir -eq 1 ]] && [[ $passfile -eq 1 ]] ; then
+		exit 1
+	fi
+	
+	outstr=""
+	for i in "${!strarr_main[@]}" ; do			
+		if [[ $i -lt $len_main ]]; then
+			if [[ $i -eq 0 ]] ; then
+				outstr=""
+			else
+				outstr=$(echo "$outstr""/""${strarr_main[$i]}")
+			fi
 		fi
 	done
+
+	echo "$outstr"
+	
+	exit 0
 }
-'
 
 get_dir_hash(){
 	local dir_ori="$1"
@@ -912,6 +1009,9 @@ main(){
 	local code
 	local flag	
 	local now
+	local elapsed
+	local start_time=$SECONDS
+	local i j k
 	
 	if [[ ! -f "$mainlogfile" ]] ; then
 		touch "$mainlogfile"
@@ -1016,16 +1116,27 @@ main(){
 		fi
 	
 		while true; do
-			if [[ ! -f "$hashlogfile" ]] ; then
-				touch "$hashlogfile"
+
+			if [[ $glb_rerun_with_newpath -eq 1 ]] ; then
+				rs=$(run_command_in_remote "1" "if [ -d \"${glb_mainmem_remote}${glb_newpath_for_rerun}\" ] ; then echo co; else echo khongco; fi")
+				code=$?
+				#echo "ket qua tra ve cua cmd truoc khi exit:""$rs"
+				#exit 0
+				if [[ "$code" != "0" ]] ; then	
+					mech "rerun with newpath: ko ton tai duong dan phia remote"
+					sync_dir ""
+					code=$?
+				else
+					mech "rerun with newpath: ok"
+					sync_dir "$glb_newpath_for_rerun"
+					code=$?
+				fi
+				glb_rerun_with_newpath=0
 			else
-				truncate --size=0 "$hashlogfile"
-			fi
-			glb_befDirHash=$(stat "$glb_mainmem_local" -c '%Y')
-			echo "/" >> "$hashlogfile"
-			echo "$glb_befDirHash" >> "$hashlogfile"
-			sync_dir ""
-			code=$?		
+				sync_dir ""
+				code=$?
+			fi			
+					
 			# "code after sync_dir:""$code"
 			rs=$(ps -p $glb_endclienttox_pid | sed -n 2p)
 			#glb_befDirHash=$(echo "$glb_befDirHash" | md5sum )
@@ -1041,37 +1152,41 @@ main(){
 				# "$glb_endclienttox_pid is running"
 				if [[ $code -eq 0 ]] ; then
 					while true; do
-						if [[ ! -f "$testhashlogfile" ]] ; then
-							touch "$testhashlogfile"
-						else
-							truncate --size=0 "$testhashlogfile"
-						fi
 						
-						glb_afDirHash=$(stat "$glb_mainmem_local" -c '%Y')
-						echo "/" >> "$testhashlogfile"
-						echo "$glb_afDirHash" >> "$testhashlogfile"
-						get_dir_hash "$glb_mainmem_local" ""
-						rs=$(diff "$hashlogfile" "$testhashlogfile")
-						code=$?
-						if [[ $code -ne 0 ]] ; then
-							#file not found
-							echo "hashfilelog or testhashfilelog not found, rerun sync"
-							break
-						fi
-				
-						if [[ -z "$rs" ]] ; then
+						elapsed=$(( $SECONDS - $start_time ))
+						
+						if [[ $elapsed -lt 120 ]] ; then
+							#hai file hashfilelog va testhashfilelog giong nhau
 							echo 'sleep 2 phut'"----afterhash:""$glb_afDirHash"
 							echo '###ok###' >> "$mainlogfile"
-							sleep 120							
-						else			
-							#exit
+							sleep 120
+						fi
+						
+						elapsed=$(( $SECONDS - $start_time ))
+						i=$(( $elapsed/60 + 1 ))
+						start_time=$SECONDS							
+						rs=$(checkmodifydir "$glb_mainmem_local" "$i")
+						code=$?
+
+						if [[ "$code" == "1" ]] ; then						
+							continue
+						elif [[ "$code" == "2" ]] ; then
+							echo "rerun with fulldir "
+							mech "rerun with fulldir "
+							break
+						elif [[ "$code" == "0" ]] ; then										
+							glb_newpath_for_rerun="$rs"
+							glb_rerun_with_newpath=1
+							echo "rerun with newpath ""$glb_newpath_for_rerun"
+							mech "rerun with newpath ""$glb_newpath_for_rerun"
 							break
 						fi
+													
 					done
 				else 
 					#nghi 1 phut 
 					echo '###error1###' >> "$mainlogfile"
-					echo 'sleep 2 phut'
+					echo 'sleep 2 phut do sync fail'
 					sleep 120
 				fi
 
