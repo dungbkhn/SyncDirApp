@@ -1157,7 +1157,7 @@ main(){
 						
 						if [[ $elapsed -lt 120 ]] ; then
 							#hai file hashfilelog va testhashfilelog giong nhau
-							echo 'sleep 2 phut'"----afterhash:""$glb_afDirHash"
+							echo 'sleep 2 phut'"----aftersync"
 							echo '###ok###' >> "$mainlogfile"
 							sleep 120
 						fi
