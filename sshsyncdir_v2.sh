@@ -344,7 +344,7 @@ find_same_files_in_list () {
 	local count=0
 	local curdir=$(pwd)	
 	local rs code
-	local pathname
+	local pathname, dname
 	local filesize
 	local md5hash
 	local mtime
@@ -353,6 +353,7 @@ find_same_files_in_list () {
 	local listfilesize
 	local outputfile_inremote="outputfile_inremote.txt"
 	local loopforcount
+	local tmphash
 	
 	rm "$glb_memtemp_local"/"$listfiles"
 	rm "$glb_memtemp_local"/"$outputfile_inremote"
@@ -361,6 +362,24 @@ find_same_files_in_list () {
 	
 	for pathname in "$dir1"/* ;do
 		if [[ -f "$pathname" ]] ; then 
+			dname=$(basename "$pathname")
+			
+			contain_special_character_Win_forbidden "$dname"			
+			code=$?
+			#neu ko chua ki tu cam
+			if [[ $code -ne 0 ]] ; then								
+				glb_hashcount=$(( $glb_hashcount + 1 ))
+				if [[ $glb_hashcount -eq 1000 ]] ; then
+					glb_hashcount=0
+					glb_befDirHash=$(echo "$glb_befDirHash" | md5sum)
+				fi
+				#echo "$pathname" >> "$hashlogfile"	
+				#glb_befDirHash=$(stat "$pathname" -c '%Y')
+				#echo "$glb_befDirHash" >> "$hashlogfile"
+				tmphash=$(stat "$pathname" -c '%Y')
+				glb_befDirHash="$glb_befDirHash""$tmphash"
+			fi
+				
 			pathname=$(basename "$pathname")
 			md5hash=$(head -c 8192 "$dir1"/"$pathname" | md5sum | awk '{ print $1 }')
 			#md5tailhash=$(get_src_content_file_md5sum "$pathname")
@@ -672,6 +691,7 @@ sync_dir(){
 	local afterslash_5
 	local afterslash_6
 	local afterslash_7
+	local tmphash
 	
 	# declare array
 	declare -a dirname
@@ -749,11 +769,7 @@ sync_dir(){
 
 		count=0
 		for i in "${!name[@]}"
-		do
-			#echo "${name[$i]}"
-
-			#findresult=$(find "$param1""$relativepath" -maxdepth 1 -type f -name "${name[$i]}")
-			
+		do						
 			#code=$?
 			if [[ -f "$param1""$relativepath""/""${name[$i]}" ]] ; then
 				code=0
@@ -842,18 +858,27 @@ sync_dir(){
 
 		for i in "${!dirname[@]}"
 		do
-			# "path:""$param1""$relativepath"/"${dirname[$i]}"
-			# "$relativepath"/"${dirname[$i]}"
-
-			#glb_befDirHash=$(stat "$param1""$relativepath""/""${dirname[$i]}" -c '%Y')
-			#echo "-----------------------syncdir:   ""$param1""$relativepath""/""${dirname[$i]}"
-			#echo "$relativepath"/"${dirname[$i]}" >> "$hashlogfile"
-			#echo "$glb_befDirHash" >> "$hashlogfile"
+			contain_special_character_Win_forbidden "${dirname[$i]}"		
+			code=$?
+			#neu ko chua ki tu cam
+			if [[ $code -ne 0 ]] ; then				
+				#echo "$param1""$relativepath""/""${dirname[$i]}" >> "$hashlogfile"
+				#echo "$glb_befDirHash" >> "$hashlogfile"
+				glb_hashcount=$(( $glb_hashcount + 1 ))
+				if [[ $glb_hashcount -eq 1000 ]] ; then
+					glb_hashcount=0
+					glb_befDirHash=$(echo "$glb_befDirHash" | md5sum)
+				fi
+				#echo "$param1""$relativepath""/""${dirname[$i]}" >> "$hashlogfile"
+				#echo "$glb_befDirHash" >> "$hashlogfile"
+				tmphash=$(stat "$param1""$relativepath""/""${dirname[$i]}" -c '%Y')
+				glb_befDirHash="$glb_befDirHash""$tmphash"
+			fi
 			
 			sync_dir "$relativepath"/"${dirname[$i]}"
 			code="$?"
 			
-			if [[ "$code" == "1" ]] ; then
+			if [[ "$code" == "1" ]] ; then				
 				return 1
 			fi
 		done
@@ -984,8 +1009,32 @@ get_dir_hash(){
 	local relative_path="$2"
 	local pathname
 	local dname
+	local tmphash
+	local code
+	
+	for pathname in "$dir_ori"/* ; do		
+		if [[ -f "$pathname" ]] ; then 
+			dname=$(basename "$pathname")
 			
-	for pathname in "$dir_ori"/* ; do
+			contain_special_character_Win_forbidden "$dname"			
+			code=$?
+			#neu chua ki tu cam
+			if [[ $code -eq 0 ]] ; then				
+				continue
+			fi
+			glb_hashcount=$(( $glb_hashcount + 1 ))
+			if [[ $glb_hashcount -eq 1000 ]] ; then
+				glb_hashcount=0
+				glb_afDirHash=$(echo "$glb_afDirHash" | md5sum)
+			fi
+			#echo "$pathname" >> "$testhashlogfile"	
+			#echo "$glb_afDirHash" >> "$testhashlogfile"
+			tmphash=$(stat "$pathname" -c '%Y')
+			glb_afDirHash="$glb_afDirHash""$tmphash"								
+		fi
+	done
+	
+	for pathname in "$dir_ori"/* ; do		
 		if [[ -d "$pathname" ]] ; then 
 			dname=$(basename "$pathname")
 			
@@ -995,10 +1044,15 @@ get_dir_hash(){
 			if [[ $code -eq 0 ]] ; then				
 				continue
 			fi
-				
-			echo "$relative_path""/""$dname" >> "$testhashlogfile"
-			glb_afDirHash=$(stat "$pathname" -c '%Y')
-			echo "$glb_afDirHash" >> "$testhashlogfile"			
+			glb_hashcount=$(( $glb_hashcount + 1 ))
+			if [[ $glb_hashcount -eq 1000 ]] ; then
+				glb_hashcount=0
+				glb_afDirHash=$(echo "$glb_afDirHash" | md5sum)
+			fi
+			#echo "$pathname" >> "$testhashlogfile"	
+			#echo "$glb_afDirHash" >> "$testhashlogfile"
+			tmphash=$(stat "$pathname" -c '%Y')		
+			glb_afDirHash="$glb_afDirHash""$tmphash"		
 			get_dir_hash "$pathname" "$relative_path""/""$dname"
 		fi
 	done
@@ -1079,8 +1133,7 @@ main(){
 			sleep 60
 			continue
 		fi
-		
-		
+				
 
 		echo "---------------------------------------sync phase------------------------------------------"
 		
@@ -1095,7 +1148,10 @@ main(){
 				glb_afDirHash=$(stat "$glb_mainmem_local" -c '%Y')
 				echo "/" >> "$testhashlogfile"
 				echo "$glb_afDirHash" >> "$testhashlogfile"
+				glb_hashcount=0
 				get_dir_hash "$glb_mainmem_local" ""
+				glb_afDirHash=$(echo "$glb_afDirHash" | md5sum)
+				echo "$glb_afDirHash" >> "$testhashlogfile"
 				rs=$(diff "$hashlogfile" "$testhashlogfile")
 				code=$?
 				if [[ $code -ne 0 ]] ; then
@@ -1123,18 +1179,58 @@ main(){
 				#echo "ket qua tra ve cua cmd truoc khi exit:""$rs"
 				#exit 0
 				if [[ "$code" != "0" ]] ; then	
-					mech "rerun with newpath: ko ton tai duong dan phia remote"
+					mech "rerun with newpath: ko ton tai duong dan phia remote, sync all"
+					if [[ ! -f "$hashlogfile" ]] ; then
+						touch "$hashlogfile"
+					else
+						truncate --size=0 "$hashlogfile"
+					fi
+					
+					glb_befDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+					echo "/" >> "$hashlogfile"
+					echo "$glb_befDirHash" >> "$hashlogfile"
+					glb_hashcount=0
 					sync_dir ""
 					code=$?
+					mech "syncdir-branch1 with code:""$code"
+					glb_befDirHash=$(echo "$glb_befDirHash" | md5sum)
+					echo "$glb_befDirHash" >> "$hashlogfile"					
 				else
 					mech "rerun with newpath: ok"
 					sync_dir "$glb_newpath_for_rerun"
 					code=$?
+					mech "syncdir-branch2 with code:""$code"
+					if [[ ! -f "$testhashlogfile" ]] ; then
+						touch "$testhashlogfile"
+					else
+						truncate --size=0 "$testhashlogfile"
+					fi
+					glb_afDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+					echo "/" >> "$testhashlogfile"
+					echo "$glb_afDirHash" >> "$testhashlogfile"
+					glb_hashcount=0
+					get_dir_hash "$glb_mainmem_local" ""
+					glb_afDirHash=$(echo "$glb_afDirHash" | md5sum)
+					echo "$glb_afDirHash" >> "$testhashlogfile"
+					mv "$testhashlogfile" "$hashlogfile"
 				fi
 				glb_rerun_with_newpath=0
 			else
+				if [[ ! -f "$hashlogfile" ]] ; then
+					touch "$hashlogfile"
+				else
+					truncate --size=0 "$hashlogfile"
+				fi
+				
+				glb_befDirHash=$(stat "$glb_mainmem_local" -c '%Y')
+				echo "/" >> "$hashlogfile"
+				echo "$glb_befDirHash" >> "$hashlogfile"
+				glb_hashcount=0
 				sync_dir ""
 				code=$?
+				mech "syncdir-branch3 with code:""$code"
+				glb_befDirHash=$(echo "$glb_befDirHash" | md5sum)
+				echo "$glb_befDirHash" >> "$hashlogfile"				
 			fi			
 					
 			# "code after sync_dir:""$code"

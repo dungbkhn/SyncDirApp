@@ -1,3 +1,5 @@
-./vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn/1/vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn/0/null/0/0
-./vpngate_public-vpn-173.opengw.net_tcp_443.ovpn/1/vpngate_public-vpn-173.opengw.net_tcp_443.ovpn/0/null/0/0
+./comparelistdir_remote_old.sh/1/comparelistdir_remote_old.sh/0/null/0/0
+./comparelistdir_remote.sh/1/comparelistdir_remote.sh/0/null/0/0
+./comparelistfile_remote.sh/1/comparelistfile_remote.sh/0/null/0/0
+./comparelistfile_remote (copy).sh/3/comparelistfile_remote (copy).sh/0/null/0/0
 ./

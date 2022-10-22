@@ -1,2 +1,3 @@
-./vpngate_public-vpn-173.opengw.net_tcp_443 (copy).ovpn/f/9602/d1637c248dd8ba45da1d28162ad92494/1665047459
-./vpngate_public-vpn-173.opengw.net_tcp_443.ovpn/f/9602/d1637c248dd8ba45da1d28162ad92494/1665047459
+./comparelistdir_remote_old.sh/f/8009/562e2464efa52e4fa42f81125bb7499c/1665047451
+./comparelistdir_remote.sh/f/6521/741d2fdcd334bbb80473d5acdc4a02bc/1665047453
+./comparelistfile_remote.sh/f/5911/ae6751abfcfaa0f9958fd0a3567dcf3e/1665047455

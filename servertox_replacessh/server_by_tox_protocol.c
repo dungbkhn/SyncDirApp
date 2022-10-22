@@ -650,6 +650,11 @@ int truncate_get_size_tempfile(uint64_t curmtimecmd, const uint8_t *m){
 		if(stt_glb_mtimeforcmd == curmtimecmd){
 			if(ts < stt_glb_ts) ts = stt_glb_ts;
 		}
+		else{
+			stt_glb_mtimeforcmd = curmtimecmd;
+			if(ts < 0) ts = 0;
+			stt_glb_ts = ts;
+		}
 	}	
     else{		
 			snprintf(stt_glb_str_file_in_working, LINE_MAX_SIZE,"%s", (char*)m);
