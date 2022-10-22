@@ -1,15 +1,171 @@
-start syncing...Thứ bảy, 22 Tháng 10 năm 2022 17:56:10 +07
+start syncing...Thứ bảy, 22 Tháng 10 năm 2022 18:37:34 +07
 relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
 generate new outputfile 0
 getback outputfile 0
---------------------39 files received valid---------------------
-file ko duoc tinh------------39
+--------------------9 files received valid---------------------
+file ko duoc tinh------------9
 --------------------0 files can append hoac copy ---------------------
 generate new outputdir 0
 getback outputdir 0
-relativepath:/AI;compare /home/dungnt/Backup/Store/MySyncDir/AI /var/res/backup/SyncDir/AI
+relativepath:/#%$^%& ' (' )45%^$&;compare /home/dungnt/Backup/Store/MySyncDir/#%$^%& ' (' )45%^$& /var/res/backup/SyncDir/#%$^%& ' (' )45%^$&
 generate new outputfile 0
 getback outputfile 0
---------------------8 files received valid---------------------
-file ko duoc tinh------------8
+--------------------3 files received valid---------------------
+file ko duoc tinh------------3
 --------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t;compare /home/dungnt/Backup/Store/MySyncDir/t /var/res/backup/SyncDir/t
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test;compare /home/dungnt/Backup/Store/MySyncDir/t/test /var/res/backup/SyncDir/t/test
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/asd;compare /home/dungnt/Backup/Store/MySyncDir/t/test/asd /var/res/backup/SyncDir/t/test/asd
+generate new outputfile 0
+getback outputfile 0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/he;compare /home/dungnt/Backup/Store/MySyncDir/t/test/he /var/res/backup/SyncDir/t/test/he
+generate new outputfile 0
+getback outputfile 0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------3
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/t/test/VPN keys;compare /home/dungnt/Backup/Store/MySyncDir/t/test/VPN keys /var/res/backup/SyncDir/t/test/VPN keys
+generate new outputfile 0
+getback outputfile 0
+--------------------2 files received valid---------------------
+file ko duoc tinh------------2
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+syncdir-branch3 with code:0
+time_lastrun:3
+###ok###
+time_lastrun:3
+rerun with newpath /t/test/he
+rerun with newpath: ok
+relativepath:/t/test/he;compare /home/dungnt/Backup/Store/MySyncDir/t/test/he /var/res/backup/SyncDir/t/test/he
+generate new outputfile 0
+getback outputfile 0
+needcopy:comparelistfile_remote (copy).sh-----0-----null-----0
+--------------------4 files received valid---------------------
+file ko duoc tinh------------3
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir comparelistfile_remote (copy).sh
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-10-06 16:10:55.522341000 +0700" "/var/res/backup/SyncDir/t/test/he/comparelistfile_remote (copy).sh"
+--------------------1 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+syncdir-branch2 with code:0
+###ok###
+time_lastrun:3
+rerun with newpath /t/test/he
+rerun with newpath: ok
+relativepath:/t/test/he;compare /home/dungnt/Backup/Store/MySyncDir/t/test/he /var/res/backup/SyncDir/t/test/he
+generate new outputfile 0
+getback outputfile 0
+--------------------3 files received valid---------------------
+file ko duoc tinh------------4
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+syncdir-branch2 with code:0
+###ok###
+time_lastrun:3
+rerun with newpath /t/test/he
+rerun with newpath: ok
+relativepath:/t/test/he;compare /home/dungnt/Backup/Store/MySyncDir/t/test/he /var/res/backup/SyncDir/t/test/he
+generate new outputfile 0
+getback outputfile 0
+needcopy:comparelistfile_remote (copy).sh-----0-----null-----0
+--------------------4 files received valid---------------------
+file ko duoc tinh------------3
+->copy:/home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir comparelistfile_remote (copy).sh
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^filesize of tempfile:0
+t:touch -d "2022-10-06 16:10:55.522341000 +0700" "/var/res/backup/SyncDir/t/test/he/comparelistfile_remote (copy).sh"
+--------------------1 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+syncdir-branch2 with code:0
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
+time_lastrun:3
+###ok###
