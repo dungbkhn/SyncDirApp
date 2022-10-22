@@ -1,3 +1,8 @@
-./comparelistdir_remote_old.sh/f/8009/562e2464efa52e4fa42f81125bb7499c/1665047451
-./comparelistdir_remote.sh/f/6521/741d2fdcd334bbb80473d5acdc4a02bc/1665047453
-./comparelistfile_remote.sh/f/5911/ae6751abfcfaa0f9958fd0a3567dcf3e/1665047455
+./CNN dien giai.docx/f/4858537/0f71350e519b1e51de206987a37cde94/1663579088
+./fntir2018-neuralir-mitra.pdf/f/3126276/c5702cf1b9fcb69538251a0b97929a8f/1663579092
+./gauss activation.pdf/f/1407388/46524b3069d8b2c44fe1529586ade724/1663579094
+./gradient Descent.docx/f/293432/956e9232494ae062671f0df9a06590b0/1663579095
+./gradient Descent.odt/f/22370939/46db6fc71965bcfb413db8a411306684/1663579105
+./reluICML_gauss activation.pdf/f/668384/a32ecf334baf078e52883df8592f6e44/1663579106
+./RNN.odt/f/83608/445fb5e5bf0dd5c3cc5604fcbef8d6ce/1663579107
+./step by step back progation.docx/f/219179/e9345c57697dac1d9f5cb78afd2cfeb6/1663579108

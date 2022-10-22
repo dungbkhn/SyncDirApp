@@ -1,5 +1,9 @@
-./comparelistdir_remote_old.sh/1/comparelistdir_remote_old.sh/0/null/0/0
-./comparelistdir_remote.sh/1/comparelistdir_remote.sh/0/null/0/0
-./comparelistfile_remote.sh/1/comparelistfile_remote.sh/0/null/0/0
-./comparelistfile_remote (copy).sh/3/comparelistfile_remote (copy).sh/0/null/0/0
+./CNN dien giai.docx/1/CNN dien giai.docx/0/null/0/0
+./fntir2018-neuralir-mitra.pdf/1/fntir2018-neuralir-mitra.pdf/0/null/0/0
+./gauss activation.pdf/1/gauss activation.pdf/0/null/0/0
+./gradient Descent.docx/1/gradient Descent.docx/0/null/0/0
+./gradient Descent.odt/1/gradient Descent.odt/0/null/0/0
+./reluICML_gauss activation.pdf/1/reluICML_gauss activation.pdf/0/null/0/0
+./RNN.odt/1/RNN.odt/0/null/0/0
+./step by step back progation.docx/1/step by step back progation.docx/0/null/0/0
 ./

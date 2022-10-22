@@ -344,7 +344,7 @@ find_same_files_in_list () {
 	local count=0
 	local curdir=$(pwd)	
 	local rs code
-	local pathname, dname
+	local pathname dname
 	local filesize
 	local md5hash
 	local mtime

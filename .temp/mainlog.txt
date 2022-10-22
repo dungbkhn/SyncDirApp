@@ -1,2 +1,15 @@
-start syncing...Thứ bảy, 22 Tháng 10 năm 2022 17:36:25 +07
-###ok###
+start syncing...Thứ bảy, 22 Tháng 10 năm 2022 17:56:10 +07
+relativepath:;compare /home/dungnt/Backup/Store/MySyncDir /var/res/backup/SyncDir
+generate new outputfile 0
+getback outputfile 0
+--------------------39 files received valid---------------------
+file ko duoc tinh------------39
+--------------------0 files can append hoac copy ---------------------
+generate new outputdir 0
+getback outputdir 0
+relativepath:/AI;compare /home/dungnt/Backup/Store/MySyncDir/AI /var/res/backup/SyncDir/AI
+generate new outputfile 0
+getback outputfile 0
+--------------------8 files received valid---------------------
+file ko duoc tinh------------8
+--------------------0 files can append hoac copy ---------------------
